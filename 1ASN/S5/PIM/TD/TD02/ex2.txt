@@ -1,0 +1,40 @@
+	selon le code : (cf ex6 td1)
+
+R0: Piloter un drone au moyen d'un menu textuel
+R1: comment "R0" ?
+	-initialiser le drone 			en_route,est_perdu,quitter : OUT BOOL
+						altitude : OUT INT
+	|loop
+	|	afficher l'altitude		altitude : IN
+-piloter|	afficher menu		
+le drone|	demander choix user		choix : OUT CHR
+(aurait	|	traiter choix			choix : IN 
+pu être	|					en_route : IN OUT, altitude : IN OUT
+mis en  |					quitter : OUT, est_perdu : OUT 
+  R1)   |jusqu'à quitter ou alors est_perdu
+	
+	- afficher raison arrêt			est_perdu : IN, en_route : IN
+
+R2: comment "initialiser le drone" ?
+	initialise var(a explicité)
+R2: comment "afficher le menu" ?
+	afficher menu (simple "print")
+R2: comment "demander choix" ?
+	input 'simple'
+R2: comment "traiter choix" ?
+	Selon choix faire:
+		'd','D'    -> Mettre le drone en route
+		'm','M'    -> Faire monter le drone
+		's','S'    -> Faire descendre le drone
+		'q','Q''0' -> 
+			quitter:=True
+		other      -> 
+			put_line(J'ai pas compris !)
+			
+R3: comment "mettre le drone en route" ?
+	cf code
+R3: comment "faire monter le drone" ?
+	cf code
+R3: comment "faire descendre le drone" ?
+	cf code
+	

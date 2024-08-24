@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="CVC4" version="1.6" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="1" name="Alt-Ergo" version="2.0.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="2" name="CVC4" version="1.6" timelimit="5" steplimit="0" memlimit="1000"/>
+<file>
+<path name=".."/>
+<path name="enquete.mlw"/>
+<theory name="Enquete">
+ <goal name="Q1">
+ </goal>
+ <goal name="Q2a" proved="true">
+ <proof prover="1"><result status="valid" time="0.00" steps="7"/></proof>
+ <proof prover="2"><result status="valid" time="0.00"/></proof>
+ </goal>
+ <goal name="Q2b">
+ <proof prover="0"><result status="unknown" time="0.00"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q2c" proved="true">
+ <proof prover="1"><result status="valid" time="0.00" steps="7"/></proof>
+ <proof prover="2"><result status="valid" time="0.00"/></proof>
+ </goal>
+ <goal name="Q3a">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q3b" proved="true">
+ <proof prover="1"><result status="valid" time="0.00" steps="4"/></proof>
+ <proof prover="2"><result status="valid" time="0.01"/></proof>
+ </goal>
+ <goal name="Q3c">
+ <proof prover="0"><result status="unknown" time="0.00"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q4a">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.00"/></proof>
+ </goal>
+ <goal name="Q4b" proved="true">
+ <proof prover="1"><result status="valid" time="0.00" steps="7"/></proof>
+ <proof prover="2"><result status="valid" time="0.00"/></proof>
+ </goal>
+ <goal name="Q4c">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q5a">
+ <proof prover="0"><result status="unknown" time="0.00"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q5b" proved="true">
+ <proof prover="1"><result status="valid" time="0.00" steps="7"/></proof>
+ <proof prover="2"><result status="valid" time="0.00"/></proof>
+ </goal>
+ <goal name="Q5c">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

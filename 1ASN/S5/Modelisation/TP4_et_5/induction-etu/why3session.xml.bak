@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Coq" version="8.11.0" timelimit="0" steplimit="0" memlimit="0"/>
+<prover id="1" name="CVC4" version="1.6" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="2" name="Alt-Ergo" version="2.0.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<file proved="true">
+<path name=".."/>
+<path name="induction-etu.mlw"/>
+<theory name="Induction" proved="true">
+ <goal name="append_Nil_left" proved="true">
+ <proof prover="1"><result status="valid" time="0.01"/></proof>
+ <proof prover="2"><result status="valid" time="0.00" steps="2"/></proof>
+ </goal>
+ <goal name="append_Cons_left" proved="true">
+ <proof prover="1"><result status="valid" time="0.01"/></proof>
+ <proof prover="2"><result status="valid" time="0.00" steps="2"/></proof>
+ </goal>
+ <goal name="append_Nil_right" proved="true">
+ <proof prover="0" edited="inductionmnetu_Induction_append_Nil_right_1.v"><result status="valid" time="0.42"/></proof>
+ <proof prover="1"><result status="unknown" time="0.02"/></proof>
+ <proof prover="2"><result status="unknown" time="0.01"/></proof>
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="append_Nil_right.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.00" steps="5"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="append_associative" proved="true">
+ <proof prover="1"><result status="unknown" time="0.02"/></proof>
+ <proof prover="2"><result status="unknown" time="0.01"/></proof>
+ <transf name="induction_ty_lex" proved="true" >
+  <goal name="append_associative.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.00" steps="11"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

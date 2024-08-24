@@ -1,0 +1,128 @@
+% Compte-rendu minimal du mini-projet SDA : LCA et TH
+% Auteur : BONGIOVANNI Arthur
+% Groupe de TP : B
+
+
+**Consigne :** Vous devez écrire vos réponse à la place des ... en laissant
+une ligne vide avant et deux après votre réponse.
+
+**Remarque :** Ce document utilise le langage Markdown. On peut en engendrer
+une version PDF en faisant par exemple :
+
+~~~
+pandoc --toc -N -o LISEZ-MOI.pdf LISEZ-MOI.txt
+~~~
+
+
+# Exercice 1
+
+## Question 1.4
+
+**Indiquer les inconvénients/avantages d'une implantation par listes chaînées
+d'une SDA.**
+
+inconvénients : 
+    simple chaîne -> pas de lien avec l'élément précedent
+    pas vraiment le concept d'un dictionaire (au sens de la structure python)
+avantages :
+    facilité d'implémentation récursive
+    taille dynamique de la structure (pas de limite de mémoires autres que la limite physique de la machine)
+
+
+
+# Évaluation expérimentale.
+
+## Performance comparée de LCA et TH
+
+Indiquer ici les résultats obtenus.
+
+...
+time ./evaluer_alea_lca 100 1000    |   time ./evaluer_alea_lca 1000 10000
+Borne  : 100                        |   Borne  : 1000
+Taille : 1000                       |   Taille : 10000
+Min : 4                             |   ^C (programme intérrompu manuellement)
+Max : 17                            |   
+real    0m1,020s                    |   real    3m4,309s
+user    0m1,013s                    |   user    3m3,904s
+sys     0m0,009s                    |   sys     0m0,030s
+
+
+time ./evaluer_alea_th 100 1000     |   time ./evaluer_alea_th 1000 10000
+Borne  : 100                        |   Borne  : 1000
+Taille : 1000                       |   Taille : 10000
+Min : 5                             |   Min : 2
+Max : 18                            |   Max : 21
+real    0m0,392s                    |   real    0m3,449s
+user    0m0,374s                    |   user    0m3,433s
+sys     0m0,017s                    |   sys     0m0,016s
+
+On peut dire que le programme est plus efficace avec des TH qu'avec des LCA
+
+
+## Qualité du générateur aléatoire
+
+Indiquer les conclusions quant à la qualité du générateur aléatoire.
+
+...
+./evaluer_alea_th 10 10000
+Borne  : 10
+Taille : 10000
+Min : 937
+Max : 1068
+
+./evaluer_alea_th 100 100000
+Borne  : 100
+Taille : 100000
+Min : 920
+Max : 1066
+
+./evaluer_alea_th 10 100000
+Borne  : 10
+Taille : 100000
+Min : 9890
+Max : 10098
+
+./evaluer_alea_th 10 1000000
+Borne  : 10
+Taille : 1000000
+Min : 99321
+Max : 100672
+
+./evaluer_alea_th 10 10000000
+Borne  : 10
+Taille : 10000000
+Min : 998360
+Max : 1001802
+
+On remarque que plus la taille de l'échantillon agmente plus les valeur min et max se rapproche de (Taille echantillon / Borne).
+on a donc un générateur fiable et "assez" aléatoire.
+
+# Principales difficultés rencontrées
+
+Indiquer ici les principales difficultés rencontrées lors de la réalisation de
+ce projet et comment elles ont été surmontées ou contournées.
+
+...
+
+Pas vraiment de difficultés rencontrées au cours de ce projet 
+(le projet se rapproche assez du tp sur les vecteur creux et en plus 
+j'avais déjà fait un projet similaire en C l'année dernière en L2 informatique à l'UT3 Paul-sabatier)
+
+
+# Informations complémentaires
+
+Indiquer ici les informations qui pourraient aider à la compréhension du
+travail réalisé.
+
+Cette partie peut être vide.
+
+...
+
+
+
+# Bilan personnel
+
+Quel bilan personnel tirez-vous de ce mini-projet ?
+
+...
+

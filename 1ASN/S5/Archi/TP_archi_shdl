@@ -1,0 +1,592 @@
+TP ARCHI SHDL:
+
+module BasculeD(rst,clk,en, in : out)
+	out := in on clk, reset when rst, enabled when en
+end module
+
+
+module BasculeT(rst, clk, en, in : out)
+	out :=  /in*out + in*/out on clk, reset when rst, enabled when en
+end module
+
+
+module adder32(a[31..0],b[31..0],cin : s[31..0],cout)
+   	adder8(a[7..0],b[7..0],cin : s[7..0],c0)
+	adder8(a[15..8],b[15..8],c0 : s[15..8],c1)
+   	adder8(a[23..16],b[23..16],c1 : s[23..16],c2)
+   	adder8(a[31..24],b[31..24],c2 : s[31..24],cout)
+end module
+
+
+module adder8(a[7..0],b[7..0],cin : s[7..0],cout)
+	fulladder(a[0],b[0],cin : s[0],c0)
+   fulladder(a[1],b[1],c0 : s[1],c1)
+   fulladder(a[2],b[2],c1 : s[2],c2)
+   fulladder(a[3],b[3],c2 : s[3],c3)
+   fulladder(a[4],b[4],c3 : s[4],c4)
+   fulladder(a[5],b[5],c4 : s[5],c5)
+   fulladder(a[6],b[6],c5 : s[6],c6)
+   fulladder(a[7],b[7],c6 : s[7],cout)
+end module
+
+
+module addsub32(a[31..0], b[31..0], sub : s[31..0], C, V)
+	b2[31..0] = b[31..0]*/sub + /b[31..0]*sub
+   adder32(a[31..0], b2[31..0], sub : s[31..0], cout)
+   V = /a[31]*/b[31]*s[31]*/sub 
+   	+ a[31]*b[31]*/s[31]*/sub 
+      + /a[31]*b[31]*s[31]*sub
+      + a[31]*/b[31]*/s[31]*sub
+	C = cout*/sub + /cout*sub
+end module
+
+
+module branch(cond[3..0], N, Z, V, C : brok)
+// décodage de la condition
+   decoder4to16(cond[3..0] : bvc & bpos & bcc & bgu & bge & bg & bne & ba & bvs & bneg & bcs & bleu & bl & ble & be & c0)
+   NxorV = N*/V + /N*V
+   NxorVorZ = NxorV+Z
+   brok = ba + be*Z + bne*/Z + bcs*C + bcc*/C + bneg*N + bpos*/N + bvs*V + bvc*/V 
+   + ble*NxorVorZ + bg*/NxorVorZ + bl*NxorV + bge*/NxorV + bleu*(Z+C) + bgu*/Z*/C
+
+end module
+
+
+module cal_max(rst, clk, cal, ad1[7..0], ad2[7..0], elemCour[31..0] : adCour[7..0], max[31..0], adMax[7..0], INITAD, INITMAX, MAJMAX, FINI)
+	
+	etats_cal_max(rst, clk, cal, finTab : INITAD, INITMAX, MAJMAX, FINI)
+   count_init8(rst,clk,initAdc,enAdc,ad1[7..0] : adCour[7..0])
+   initAdc = cal*INITAD
+   enAdc = cal*(INITMAX + MAJMAX*/finTab)
+   ucmp8(adCour[7..0], ad2[7..0] : supAd, equAd)
+   finTab = supAd
+   reg8_D(rst,clk,enAdMax,adCour[7..0] : adMax[7..0])
+   enAdMax = cal*INITAD + cal*MAJMAX*/finTab*supMax
+   ucmp32(elemCour[31..0], max[31..0] : supMax, eqMax)
+   reg32_D(rst,clk,enMax,elemCour[31..0] : max[31..0])
+   enMax = cal*INITAD + cal*MAJMAX*/finTab*supMax
+   
+end module
+
+
+module cal_min(rst, clk, cal, ad1[7..0], ad2[7..0], elemCour[31..0] : adCour[7..0], min[31..0], adMin[7..0], INITAD, INITMIN, MAJMIN, FINI)
+	
+	etats_cal_min(rst, clk, cal, finTab : INITAD, INITMIN, MAJMIN, FINI)
+   count_init8(rst,clk,initAdc,enAdc,ad1[7..0] : adCour[7..0])
+   initAdc = cal*INITAD
+   enAdc = cal*(INITMIN + MAJMIN*/finTab)
+   ucmp8(adCour[7..0], ad2[7..0] : supAd, equAd)
+   finTab = supAd + equAd
+   reg8_D(rst,clk,enMin,adCour[7..0] : adMin[7..0])
+   ucmp32(min[31..0], elemCour[31..0] : supMin, eqMin)
+   reg32_D(rst,clk,enMin,elemCour[31..0] : min[31..0])
+   enMin = cal*INITAD + cal*MAJMIN*/finTab*supMin
+end module
+
+
+module count2(rst, clk, en : c[1..0])
+	c[1..0] := s[1..0] on clk, reset when rst, enabled when en 	
+	inc2(c[1..0] : s[1..0])
+end module
+
+
+module count4(rst, clk, en, c[3..0])
+	count2(rst,clk,en, c[1..0])
+   en1 = c[1]*c[0]
+   count2(rst,clk,en1, c[3..2])
+end module
+
+
+module count8(rst,clk,en,c[7..0])
+	count4(rst,clk,en, c[3..0])
+   en1 = c[3]*c[2]*c[1]*c[0]
+   count4(rst,clk,en1, c[7..4])
+end module
+
+
+module count8_b1_b2(rst, clk, count, init, b1[7..0], b2[7..0] : c[7..0])
+// compteur iniialisé avec b1 quand init=1 et count=0, compte quand init=0 et count=1 et s'arrête quand il atteint b2
+
+// l'utilisation de en peut s'avérer problématique si le signal en est composé !!! bug
+c[7..0] := /t[7..0]*c[7..0] + t[7..0]*/c[7..0] on clk reset when rst 
+
+t[0] = /init*count*sup + init*/count* (b1[0]*/c[0] + /b1[0]*c[0])
+t[1] = /init*count*sup*c[0] + init*/count* (b1[1]*/c[1] + /b1[1]*c[1])
+t[2] = /init*count*sup*c[0]*c[1] + init*/count* (b1[2]*/c[2] + /b1[2]*c[2])
+t[3] = /init*count*sup*c[0]*c[1]*c[2] + init*/count* (b1[3]*/c[3] + /b1[3]*c[3])
+t[4] = /init*count*sup*c[0]*c[1]*c[2]*c[3] + init*/count* (b1[4]*/c[4] + /b1[4]*c[4])
+t[5] = /init*count*sup*c[0]*c[1]*c[2]*c[3]*c[4] + init*/count* (b1[5]*/c[5] + /b1[5]*c[5])
+t[6] = /init*count*sup*c[0]*c[1]*c[2]*c[3]*c[4]*c[5] + init*/count* (b1[6]*/c[6] + /b1[6]*c[6])
+t[7] = /init*count*sup*c[0]*c[1]*c[2]*c[3]*c[4]*c[5]*c[6] + init*/count* (b1[7]*/c[7] + /b1[7]*c[7])
+	
+ucmp8(b2[7..0], c[7..0] : sup, eq)
+
+end module
+
+
+module count8_pas(rst,clk,en,pas[1..0],c[7..0])
+   p[7] = 0
+   p[6] = 0
+   p[5] = 0
+   p[4] = 0
+   p[3] = 0
+   p[2] = 0
+   p[1] = pas[1]
+   p[0] = pas[0]
+   adder8(c[7..0],p[7..0],0 : s[7..0],cout)
+   c[7..0] := /s[7..0]*c[7..0] + s[7..0]*/c[7..0] on clk, reset when rst, enabled when en
+end module
+
+
+module count_init4(rst,clk,en,init,e[3..0] : c[3..0])
+	c[3..0] := /T[3..0]*c[3..0] + T[3..0]*/c[3..0] on clk, reset when rst, enabled when en
+   
+  	T[0] = 1*/init + init*e[0] 
+  	T[1] = c[0]*/init + init*e[1] 
+  	T[2] = c[1]*c[0]*/init + init*e[2] 
+	T[3] = c[2]*c[1]*c[0]*/init + init*e[3]
+end module
+
+
+module count_init8(rst,clk,init,en, e[7..0] : c[7..0])
+	c[7..0] := /T[7..0]*c[7..0] + T[7..0]*/c[7..0] on clk, reset when rst, enabled when en
+   
+  	T[0] = 1*/init + init*e[0] 
+  	T[1] = c[0]*/init + init*e[1] 
+  	T[2] = c[1]*c[0]*/init + init*e[2] 
+	T[3] = c[2]*c[1]*c[0]*/init + init*e[3]
+   T[4] = c[3]*c[2]*c[1]*c[0]*/init + init*e[4] 
+  	T[5] = c[4]*c[3]*c[2]*c[1]*c[0]*/init + init*e[5] 
+  	T[6] = c[5]*c[4]*c[3]*c[2]*c[1]*c[0]*/init + init*e[6] 
+	T[7] = c[6]*c[5]*c[4]*c[3]*c[2]*c[1]*c[0]*/init + init*e[7]
+end module
+
+
+module decoder2to4(e[1..0] : s[3..0])
+	s[0]= /e[1]*/e[0]
+   s[1]= /e[1]*e[0]
+   s[2]= e[1]*/e[0]
+   s[3]= e[1]*e[0]
+end module
+
+
+module decoder3to8(e[2..0] : s[7..0])
+	decoder2to4(e[1..0] : s1[3..0])
+   s[3..0] = s1[3..0]*/e[2]
+   s[7..4] = s1[3..0]*e[2]
+end module
+
+
+module decoder4to16(e[3..0] : s[15..0])
+	decoder3to8(e[2..0] : s1[7..0])
+   s[7..0] = s1[7..0]*/e[3]
+   s[15..8] = s1[7..0]*e[3]
+end module
+
+
+module decoder5to32(e[4..0] : s[31..0])
+	decoder4to16(e[3..0] : s1[15..0])
+   s[15..0] = s1[15..0]*/e[4]
+   s[31..16] = s1[15..0]*e[4]
+end module
+
+
+module decoder6to64(e[5..0] : s[63..0])
+	decoder5to32(e[4..0] : s1[31..0])
+   s[31..0] = s1[31..0]*/e[5]
+   s[63..32] = s1[31..0]*e[5]
+end module
+
+
+module etats_cal_max(rst, clk, cal, fin_tab : initad, initmax,majmax,fini)
+
+	initad := /cal  on clk, set when rst
+   initmax := initad*cal on clk, reset when rst
+   majmax := initmax*cal + majmax*/fin_tab*cal on clk, reset when rst
+   fini := fini*cal + majmax*fin_tab*cal on clk, reset when rst
+
+end module
+
+
+module etats_cal_min(rst, clk, cal, fin_tab : initad, initmin, majmin, find_min)
+
+	initad := /cal  on clk, set when rst
+   initmin := initad*cal on clk, reset when rst
+   majmin := initmin*cal + majmin*/fin_tab*cal on clk, reset when rst
+   find_min := find_min*cal + majmin*fin_tab*cal on clk, reset when rst
+
+end module
+
+
+module etats_tri_tab(rst, clk, cal, find_min, sorted :
+				Init, Calmin, W_elem, W_min, Fini)
+
+Init := /cal 																on clk, set when rst
+Calmin := cal * (Init + Calmin*/find_min + W_min*/sorted) 	on clk, reset when rst
+W_elem := Calmin * cal * find_min 									on clk, reset when rst
+W_min := W_elem * cal 													on clk, reset when rst
+Fini :=	cal * (W_min*sorted + Fini)								on clk, reset when rst
+end module
+
+// cf etats_cal_min & cal_min
+
+// 	Algorithme
+// Ad_curr <- ad_start
+// min <- Tab(Ad_curr)
+// Ad_min <- Ad_curr
+// Ad_curr <- Ad_curr + 1
+// Tant que Ad_curr < ad_end faire
+//		si Tab(Ad_curr) < min alors
+//			min <- Tab(Ad_curr)
+//			ad_min <- Ad_curr
+//		fin si
+//		Ad_curr <- Ad_curr + 1
+// fin Tant que
+//
+//	Graphe d'états
+// Transition			Condition(s)			opération(s)
+// * -> Init			/cal						X
+// Init -> Calmin		cal						Ad_curr <- ad1
+//														Elem_curr <- Tab(ad1) */
+// Calmin -> Calmin	cal*/find_min			cal_min (cherche le minimum du sous_tableau non-trié et son adresse)
+// Calmin -> W_elem	cal*find_min			Tab(Ad_curr)<- min
+// W_elem -> W_min	cal						Tab(ad_min)<- val_curr
+// W_min -> Calmin 	cal*/Sorted				Ad_curr <- Ad_curr + 1
+// W_min -> Fini		cal*Sorted				X
+// Fini -> Fini		cal						X
+
+
+module etats_tri_tab_suite(rst, clk, cal, find_min, sorted :
+				Init, InitCur,Calmin, W_elem, W_min, Fini)
+
+Init := /cal 																on clk, set when rst
+InitCur := cal * (Init + W_min*/sorted)							on clk, reset when rst
+Calmin := cal * (InitCur + Calmin*/find_min) 					on clk, reset when rst
+W_elem := Calmin * cal * find_min 									on clk, reset when rst
+W_min := W_elem * cal 													on clk, reset when rst
+Fini :=	cal * (W_min*sorted + Fini)								on clk, reset when rst
+end module
+
+// cf etats_cal_min & cal_min
+
+// 	Algorithme
+// Ad_curr <- ad_start
+// min <- Tab(Ad_curr)
+// Ad_min <- Ad_curr
+// Ad_curr <- Ad_curr + 1
+// Tant que Ad_curr < ad_end faire
+//		si Tab(Ad_curr) < min alors
+//			min <- Tab(Ad_curr)
+//			ad_min <- Ad_curr
+//		fin si
+//		Ad_curr <- Ad_curr + 1
+// fin Tant que
+//
+//	Graphe d'états
+// Transition			Condition(s)			opération(s)
+// * -> Init			/cal						X
+// Init -> InitCur	cal						Ad_curr <- ad1
+//	InitCur -> Calmin	cal						Elem_curr <- Tab(ad1) */
+// Calmin -> Calmin	cal*/find_min			cal_min (cherche le minimum du sous_tableau non-trié et son adresse)
+// Calmin -> W_elem	cal*find_min			Tab(Ad_curr)<- min
+// W_elem -> W_min	cal						Tab(ad_min)<- val_curr
+// W_min -> Calmin 	cal*/Sorted				Ad_curr <- Ad_curr + 1
+// W_min -> Fini		cal*Sorted				X
+// Fini -> Fini		cal						X
+
+
+module fulladder(a,b,cin:s,cout)
+	s = /a*/b*cin + /a*b*/cin + a*/b*/cin + a*b*cin
+	cout = a*b + a*cin + b*cin
+end module
+
+
+module inc2(e[1..0] : s[1..0])
+	s[0] = /e[0]
+   s[1] = /e[1]*e[0] + e[1]*/e[0]
+   
+end module
+
+
+module max8(a[7..0],b[7..0] : maxab[7..0])
+	ucmp8(a[7..0],b[7..0]: sup, eq)
+   maxab[7..0] = sup*a[7..0] + b[7..0]*/sup
+end module
+
+
+module minicraps(rst, clk, on, bregin[3..0], adin[7..0] : 
+	abus[31..0], bbus[31..0], rambus[31..0], dbus[31..0], pc[31..0], ir[31..0], flags[3..0], etats[4..0])
+  
+	// on = 1 : mode exécution / on = 0 : mode lecture (registres et ram)
+	// on = 0 : on lit la mémoire sur rambus à l'adresse entrée sur adin
+	// on = 0 : on lit sur bbus le registre dont le numéro est entré sur bregin
+   
+	// horloge active seulement quand on = 1
+	clkon = clk*on
+   
+	// REGISTRES
+	registres(rst, clkon, dreg[3..0],areg[3..0],breg[3..0],dbus[31..0]: abus[31..0],bbus[31..0],pc[31..0],ir[31..0])
+   
+	// on = 0 : on lit sur bbus le registre dont le numéro est entré sur bregin
+	// on = 1 : on lit sur bbus le registre dont le numéro bregseq est fourni par le sequenceur
+	breg[3..0] = on*bregseq[3..0] + /on*bregin[3..0]
+   
+	// UAL
+	ual(abus[31..0],bbus[31..0],ualCmd[3..0]: ualbus[31..0], ualN, ualZ, ualV, ualC)
+   
+	// FLAGS
+	N := ualN on clkon reset when rst enabled when setflags
+	Z := ualZ on clkon reset when rst enabled when setflags
+	V := ualV on clkon reset when rst enabled when setflags
+  	C := ualC on clkon reset when rst enabled when setflags
+
+	flags[3..0] = N & Z & V & C
+   
+	// RAM 1K (256 mots de 32 bits)
+	// on = 0 : on lit la mémoire sur rambus à l'adresse entrée sur adin
+	// on = 1 : on lit la mémoire sur rambus à l'adresse fournie par abus
+	adr[7..0] = abus[7..0]*on + adin[7..0]*/on
+	$ram_aread_swrite(clkon, write, adr[7..0], dbus[31..0] : rambus[31..0])
+   
+	// DBUS : affectation tristate - avantage : l'exclusité entre les termes when est vérifiée
+	// mieux que l'affectation classique :  
+	// dbus[31..0] = ualbus[31..0]*/dbusIn[1]*dbusIn[0] + rambus[31..0]*dbusIn[1]*/dbusIn[0] + bbus[31..0]*dbusIn[1]*dbusIn[0]
+   
+	dbus[31..0] = ualbus[31..0] output enabled when /dbusIn[1]*dbusIn[0]		
+	dbus[31..0] = rambus[31..0] output enabled when dbusIn[1]*/dbusIn[0]
+	dbus[31..0] = bbus[31..0] output enabled when dbusIn[1]*dbusIn[0]
+  
+	// SEQUENCEUR
+	// Remplacer les 0 par les nouveaux états ajoutés pour l'accès mémoire et branch
+	etats[4..0] = fetch & decode & pcplus1 & memaccess & brch
+	sequenceur(rst, clkon, ir[31..16] : fetch, decode, pcplus1, memaccess, brch, areg[3..0], bregseq[3..0], dreg[3..0], ualCmd[3..0], dbusIn[1..0], write, setflags)
+
+end module
+
+
+module reg32_D(rst,clk,en,e[31..0] : sr[31..0])
+	sr[31..0] := e[31..0] on clk, reset when rst, enabled when en
+end module
+
+
+module reg8_D(rst,clk,en,e[7..0] : sr[7..0])
+	sr[7..0] := e[7..0] on clk, reset when rst, enabled when en
+end module
+
+
+module reg8_T(rst, clk, en, t[7..0] : st[7..0])
+	st[7..0] := /t[7..0]*st[7..0] + t[7..0]*/st[7..0] on clk, reset when rst, enabled when en
+   
+end module
+
+
+module registres(rst,clk,dreg[3..0],areg[3..0],breg[3..0],datain[31..0]: a[31..0],b[31..0],pc[31..0],ir[31..0])
+R0[31..0]="00000000000000000000000000000000"
+R1[31..0]="00000000000000000000000000000001"
+reg32_D(rst,clk,dsel[2],datain[31..0]:R2[31..0])
+reg32_D(rst,clk,dsel[3],datain[31..0]:R3[31..0])
+reg32_D(rst,clk,dsel[4],datain[31..0]:R4[31..0])
+reg32_D(rst,clk,dsel[5],datain[31..0]:R5[31..0])
+reg32_D(rst,clk,dsel[6],datain[31..0]:R6[31..0])
+reg32_D(rst,clk,dsel[7],datain[31..0]:R7[31..0])
+reg32_D(rst,clk,dsel[8],datain[31..0]:R8[31..0])
+reg32_D(rst,clk,dsel[9],datain[31..0]:R9[31..0])
+reg32_D(rst,clk,dsel[10],datain[31..0]:R10[31..0])
+reg32_D(rst,clk,dsel[11],datain[31..0]:R11[31..0])
+reg32_D(rst,clk,dsel[12],datain[31..0]:R12[31..0])
+reg32_D(rst,clk,dsel[13],datain[31..0]:R13[31..0])
+reg32_D(rst,clk,dsel[14],datain[31..0]:pc[31..0])
+reg32_D(rst,clk,dsel[15],datain[31..0]:ir[31..0])
+
+decoder4to16(dreg[3..0]:dsel[15..0])
+decoder4to16(areg[3..0]:asel[15..0])
+decoder4to16(breg[3..0]:bsel[15..0])
+a[31..0] = R0[31..0]*asel[0] + R1[31..0]*asel[1] + R2[31..0]*asel[2] + R3[31..0]*asel[3] 
+			+ R4[31..0]*asel[4] + R5[31..0]*asel[5] + R6[31..0]*asel[6] + R7[31..0]*asel[7] 
+        	+ R8[31..0]*asel[8] + R9[31..0]*asel[9] + R10[31..0]*asel[10] + R11[31..0]*asel[11] 
+         + R12[31..0]*asel[12] + R13[31..0]*asel[13] + pc[31..0]*asel[14] + ir[31..0]*asel[15] 
+
+b[31..0] = R0[31..0]*bsel[0] + R1[31..0]*bsel[1] + R2[31..0]*bsel[2] + R3[31..0]*bsel[3] 
+			+ R4[31..0]*bsel[4] + R5[31..0]*bsel[5] + R6[31..0]*bsel[6] + R7[31..0]*bsel[7] 
+         + R8[31..0]*bsel[8] + R9[31..0]*bsel[9] + R10[31..0]*bsel[10] + R11[31..0]*bsel[11] 
+         + R12[31..0]*bsel[12] + R13[31..0]*bsel[13] + pc[31..0]*bsel[14] + ir[31..0]*bsel[15] 
+end module
+
+
+module sequenceur(rst, clk, ir[31..16] : 
+		fetch, decode, pcplus1, memaccess, brch, areg[3..0], breg[3..0], dreg[3..0],ualCmd[3..0], dbusIn[1..0], write, setFlags)
+	fetch := pcplus1+brch on clk set when rst
+   decode := fetch on clk reset when rst
+   decode2pcplus1 = decode*/ir[31]
+   decode2pcplus1set = decode*ir[31]*ir[30]*/ir[29]*/ir[28]
+   pcplus1 := (decode2pcplus1 + decode2pcplus1set + load + store) on clk reset when rst
+   
+   calcaddr = decode*ir[31]*/ir[30]*/ir[29]
+   load := calcaddr * /ir[28] on clk reset when rst
+   store := calcaddr * ir[28] on clk reset when rst
+   memaccess = load + store
+   
+   brch := decode*ir[31]*ir[30]*ir[29]*/ir[28] on clk reset when rst
+   
+   
+   areg[3..0] = (fetch + pcplus1)* "1110" + (decode2pcplus1set + brch) * "1111"  + decode2pcplus1 * ir[23..20]
+   				+ calcaddr * ir[23..20] + "1100"*(load + store)
+            
+	breg[3..0] = (fetch + load ) * "0000" + (decode2pcplus1 + calcaddr) * ir[19..16] + pcplus1 * "0001" + decode2pcplus1set * "0000"
+   				+ ir[27..24] * store + brch * "1110"
+            
+	dreg[3..0] = fetch * "1111" + (pcplus1 + brch) * "1110" + calcaddr * "1100" + store * "0000"
+   			+ ir[27..24]*(load + decode2pcplus1 + decode2pcplus1set) 
+   
+   ualCmd[3..0] = (fetch + calcaddr + pcplus1) * "0000" + decode2pcplus1set * "1100" 
+   				 + (decode2pcplus1+ load + store + brch) * ir[31..28]
+	
+   dbusIn[1..0] = "10"*(fetch+load) + "01"*(decode2pcplus1 + pcplus1 + decode2pcplus1set + calcaddr + brch) + "11" * store
+
+	write =  "0" * (fetch + decode2pcplus1 + pcplus1 + decode2pcplus1set + calcaddr + load + brch) + "1" * store
+   
+   setFlags = decode2pcplus1 + decode2pcplus1set + load + store + brch
+    
+   
+end module
+
+
+module tri_tab(rst,clk,cal,ad_start[7..0],ad_end[7..0] : 
+			etats[4..0],ad_curr[7..0],Cal_min,etat_min[3..0],min[31..0],ad_min[7..0],
+         ad_ram[7..0], in_ram[31..0], W_ram, out_ram[31..0])
+   
+  	etats_tri_tab(rst, clk, cal, minOK, sorted : etats[0],etats[1],etats[2],etats[3],etats[4])
+   count8_b1_b2(rst,clk,etats[3],etats[0],ad_start[7..0],ad_end[7..0]:ad_curr[7..0])
+   Cal_min = etats[1]
+   cal_min(rst, clk, Cal_min, ad_curr[7..0], ad_end[7..0], elemCour[31..0] : 
+   			ad_cal[7..0], min[31..0], adMin[7..0], etat_min[0], etat_min[1], etat_min[2], etat_min[3])
+   minOK = etat_min[3]
+   
+   ucmp8(ad_curr[7..0],ad_end[7..0]:adCourSupAd2, adCourEqAd2)
+   sorted = adCourSupAd2 + adCourEqAd2
+   
+   // lecture & ecriture dans la ram
+   $ram_aread_swrite(clk, W_ram, ad_ram[7..0], in_ram[31..0] : out_ram[31..0])
+   W_ram = etats[2] + etats[3]
+   ad_ram[7..0] = /cal*ad_start[7..0] + cal *(ad_curr[7..0]*etats[2] + ad_min[7..0]*etats[3])
+   in_ram[31..0] = min[31..0]*etats[2] + elemCour[31..0]*etats[3]
+   reg32_D(rst,clk,etats[0],out_ram[31..0] : elemCour[31..0])
+   
+end module
+
+
+module tri_tab_int(rst, clk, cal, ad1[7..0], ad2[7..0], minOK : etats[4..0], calMin, adCour[7..0])
+	
+   etats_tri_tab(rst, clk, cal, minOK, sorted : etats[0],etats[1],etats[2],etats[3],etats[4])
+   count8_b1_b2(rst,clk,etats[3],etats[0],ad1[7..0],ad2[7..0]:adCour[7..0])
+   ucmp8(adCour[7..0],ad2[7..0]:adCourSupAd2, adCourEqAd2)
+
+   calMin = etats[1]
+   sorted = adCourSupAd2 + adCourEqAd2
+   
+end module
+
+
+module tri_tab_int_suite(rst, clk, cal, ad1[7..0], ad2[7..0], minOK : etats[5..0], calMin, adCour[7..0])
+	
+   etats_tri_tab_suite(rst, clk, cal, minOK, sorted : etats[0],etats[1],etats[2],etats[3],etats[4],etats[5])
+   count8_b1_b2(rst,clk,etats[3],etats[0],ad1[7..0],ad2[7..0]:adCour[7..0])
+   ucmp8(adCour[7..0],ad2[7..0]:adCourSupAd2, adCourEqAd2)
+
+   calMin = etats[2]
+   sorted = adCourSupAd2 + adCourEqAd2
+   
+end module
+
+
+module tri_tab_suite(rst,clk,cal,ad_start[7..0],ad_end[7..0] : 
+			etats[5..0],ad_curr[7..0],Cal_min,etat_min[3..0],min[31..0],ad_min[7..0],
+         ad_ram[7..0], in_ram[31..0], W_ram, out_ram[31..0])
+   
+  	etats_tri_tab_suite(rst, clk, cal, minOK, sorted : etats[0],etats[1],etats[2],etats[3],etats[4],etats[5])
+   count8_b1_b2(rst,clk,etats[4],etats[0],ad_start[7..0],ad_end[7..0]:ad_curr[7..0])
+   Cal_min = etats[2]
+   cal_min(rst, clk, Cal_min, ad_curr[7..0], ad_end[7..0], elemCour[31..0] : 
+   			ad_cal[7..0], min[31..0], ad_min[7..0], etat_min[0], etat_min[1], etat_min[2], etat_min[3])
+   minOK = etat_min[3]
+   
+   ucmp8(ad_curr[7..0],ad_end[7..0]:adCourSupAd2, adCourEqAd2)
+   sorted = adCourSupAd2 + adCourEqAd2
+   
+   // lecture & ecriture dans la ram
+   $ram_aread_swrite(clk, W_ram, ad_ram[7..0], in_ram[31..0] : out_ram[31..0])
+   W_ram = etats[3] + etats[4]
+   ad_ram[7..0] = /cal*ad_start[7..0] + cal *(ad_curr[7..0]*(etats[1] + etats[3]) + ad_min[7..0]*etats[4])
+   in_ram[31..0] = min[31..0]*etats[3] + elemCour[31..0]*etats[4]
+   reg32_D(rst,clk,etats[1],out_ram[31..0] : elemCour[31..0])
+   
+end module
+
+
+module ual(a[31..0],b[31..0],cmd[3..0]: s[31..0],N,Z,V,C)
+//add cmd = 0000
+//sub cmd = 0001
+//brch cmd = 1110
+
+addsub32(a[31..0],b[31..0],cmd[0],Saddsub[31..0],C,V)
+sigextend24[23..0] = a[23..0]
+sigextend24[31..24] = a[23]*"11111111" // deplacement24 si brch
+
+branch(a[27..24], N, Z, V, C : brok)
+addsub32(b[31..0],sigextend24[31..0], sigextend24[31],newPC[31..0],C_useless1,V_useless1)
+addsub32(b[31..0],"00000000000000000000000000000001", sigextend24[31],newPCplus1[31..0],C_useless2,V_useless2)
+
+s[31..0] = Saddsub[31..0] * /cmd[3] * /cmd[2]* /cmd[1] 
+			+ sigextend24[31..0] * (cmd[3] * cmd[2] * /cmd[1] * /cmd[0])
+         + (newPC[31..0] * brok + newPCplus1[31..0] * /brok) * (cmd[3] * cmd[2] * cmd[1] * /cmd[0])
+// N et Z sont les resulta de la comparaison avec O (z equal et N negatif)
+zero[31..0] = "00000000000000000000000000000000"
+N = s[31]
+ucmp32(zero[31..0],s[31..0]:neg,Z)
+end module
+
+
+module ucmp1(a, b : sup, equ)
+	sup = a*/b
+   equ = a*b + /a*/b
+end module
+
+
+module ucmp16(a[15..0], b[15..0] : sup, equ)
+	 ucmp8(a[7..0], b[7..0] : sup7, equ7)
+    ucmp8(a[15..8], b[15..8] : sup15, equ15)
+    sup = sup15 + equ15*sup7
+    equ = equ15*equ7
+end module
+
+
+module ucmp2(a[1..0], b[1..0] : sup, equ)
+	 ucmp1(a[0], b[0] : sup0, equ0)
+    ucmp1(a[1], b[1] : sup1, equ1)
+    sup = sup1 + equ1*sup0
+    equ = equ0*equ1
+end module
+
+
+module ucmp32(a[31..0], b[31..0] : sup, equ)
+	 ucmp16(a[15..0], b[15..0] : sup15, equ15)
+    ucmp16(a[31..16], b[31..16] : sup31, equ31)
+    sup = sup31 + equ31*sup15
+    equ = equ31*equ15
+end module
+
+
+module ucmp4(a[3..0], b[3..0] : sup, equ)
+	 ucmp2(a[1..0], b[1..0] : sup1, equ1)
+    ucmp2(a[3..2], b[3..2] : sup3, equ3)
+    sup = sup3 + equ3*sup1
+    equ = equ3*equ1
+end module
+
+
+module ucmp8(a[7..0], b[7..0] : sup, equ)
+	 ucmp4(a[3..0], b[3..0] : sup3, equ3)
+    ucmp4(a[7..4], b[7..4] : sup7, equ7)
+    sup = sup7 + equ7*sup3
+    equ = equ7*equ3
+end module

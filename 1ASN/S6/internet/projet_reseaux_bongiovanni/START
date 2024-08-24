@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Make sure we are in the script directory
+ScriptDIR=$(cd `dirname $0` && pwd)
+if [ $ScriptDIR != $PWD ]; then
+   echo "Ce script doit être executé depuis son dossier" 1>&2
+   exit
+fi
+
+#On récupère le nombre de sessions actives de Yane
+C=`sudo ./yane  -l | wc -l`
+
+#On vérifie qu'aucune session n'est déjà lancée
+if [ "$C" != "0" ] ; then
+  echo "Une session est déjà lancée pour la fermer executez la commande:"
+  echo "   STOP"
+  exit
+
+else
+  #On copie les scripts dans le dossier partagé du Docker correspondant
+  cp ./scripts/serveur_user ./files/serveur_user/var/scripts/init
+  cp ./scripts/routeur_FAI ./files/routeur_FAI/etc/scripts/init
+  cp ./scripts/R1 ./files/R1/etc/scripts/init
+  cp ./scripts/R2 ./files/R2/etc/scripts/init
+  cp ./scripts/Serveur_WEB ./files/Serveur_WEB/var/scripts/init
+  cp ./scripts/Serveur_DNS ./files/Serveur_DNS/etc/scripts/init
+  cp ./scripts/box1 ./files/box1/etc/scripts/init
+  cp ./scripts/box2 ./files/box2/etc/scripts/init
+  cp ./scripts/routeur_services ./files/routeur_services/etc/scripts/init
+  cp ./scripts/routeur_services_reseaux ./files/routeur_services_reseaux/etc/scripts/init
+  echo 'Chargement des VM..'
+  #On lance Yane
+  sudo ./yane > /dev/null
+  exit
+fi

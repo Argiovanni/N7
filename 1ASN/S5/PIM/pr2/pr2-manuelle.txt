@@ -1,0 +1,119 @@
+% Evaluation faite par l'enseignant de TP (faire git log <ce fichier>)
+%
+%
+
+Voir aussi le fichier evaluations-automatique.txt
+
+
+Les chiffres entre crochets correspondent à un malus [-0.5] ou un bonus [+0.5]
+avec une explication qui suit.
+
+En début de ligne apparaît le nombre de points obtenu sur l'item et en fin de
+ligne, entre parenthèses, le barème.
+
+
+# 7.25 Exercice 1 : LCA (7.5 pt)
+
+* .5 Définition du type lca.ads (.5 pt)
+* 2.75 Implantation lca.adb (3.0 pt)
+	- 2.25 Erreurs/maladresse (2.5 pt)
+		- [-0.0] Pas besoin de Si (une expression booléenne suffit) : Est_Vide
+		- [-0.25] Si Répéter -> Tantque : Taille
+		- [-0.5] while inutile dans Detruire (appel récursif)
+		- [-0.5] Répéter au lieu de TantQue : Taille, Detruire
+		- [-0.5] Coûteux : Cle_Presente utilisée dans Enregistrer, Supprimer ou La_Donnee
+		- [-0.5] Supprimer : inutile de traiter le cas suivant !
+		- [-0.5] Supprimer : Pas libération de la mémoire de la cellule de tête
+		- [-0.0] Pour_Chaque : Factoriser l'appel à Pour_Chaque
+		- [-0.5] Pour_Chaque : L'exception levées par Traiter ne sont pas récupérées
+		- [-0.5] Pour_Chaque : Utiliser Taille n'est pas efficace (un While n'est pas logique dans ce cas)
+		- [-0.5] Il ne faut pas ajouter des SP dans l'interface
+		- [-0.5] Enregistrer, La_Donnee, Supprimer : Beaucoup plus compliquées que nécessaire !
+		- [-0.5] Coûteux & Faux : Utiliser Supprimer dans Detruire et certainement faux car Supprimer supprime la cellule !
+		- [-0.5] Detruire: Il faut libérer la mémoire utilisée par les cellules
+		- [-0.25] Detruire: Ne pas faire de Free sur un pointeur nul.
+		- [-0.5] Ne pas récupérer l'exception Cle_Absente_Exception !
+		- [-0.25] Pour_Chaque: Pourquoi compter le nombre d'erreurs ?
+		- -0.25 Ne pas utiliser Est_Vide(S) pour tester si S est null
+		- [-0.50] Afficher_Debug non faite
+		- [+0.5] Utilisation de SP local pertinent, par exemple trouver la Cellule associée à une clé
+		- ...
+	- .5 Lisibilité (.5 pt)
+		- [-0.5]Pas d'espace autour des opérateurs
+		- [-0.5] Mauvaise indentation
+		- [-0.5] Il faut enlever les TODO
+		- ...
+* 1 Exemple sujet lca_sujet.adb (1 pt)
+* 1 Inconvénients LISEZ-MOI.txt (1 pt)
+* 2 Exécution (2 pt)
+	- 1 lca_sujet fonction, sans et avec valdrind (1 pt)
+	- 1 test_lca fonction, sans et avec valdrind (1 pt)
+
+
+
+# 6.75 Exercice 2 : TH (7.5 pt)
+
+* 2 Interface th.ads (2.5 pts)
+	- 1 Paramètres de généricité (1 pt)
+		- [-0.5] Par paramètre manquant / incorrect (T_Cle, T_Donnee, Taille, Fonction_Hachage)
+	- .25 Opérations (.5 pt)
+		- -0.25 Il n'y a pas de raison de changer le nom des opérations !
+	- .5 Définition du type (0.5 pt)
+		- [-0.25] On doit réutiliser le module LCA, pas redéfinir le type LCA
+		- [-0.25] Inutile de définir une taille effective sur le tableau
+	- .25 Instanciation de LCA (0.5 pt)
+		- [-0.50] Pas d'instanciation du paquetage LCA
+		- -0.25 Le paquetage LCA devrait être instancié dans la partie private.
+
+* 1.75 Implantation th.adb (2.0 pt)
+	- [-0.5] Pas de return dans un boucle
+	- [-0.50] Afficher_Debug non faite
+	- [-0.0] Supprimer : Inutile de lever explicitement Cle_Absente_Exception car LCA.Supprimer le fait déjà
+	- [-0.0] Pour_Chaque : Inutile de récupérer les exceptions, Pour_Chaque de LCA le fait déjà
+	- [-0.5] Mauvaise utilisation de la fonction de hachage (pas de modulo)
+	- [-1.0] Opérations définies au lieu de réutiliser le module LCA
+	- -0.25 Est_Vide : for non adapté
+	- [-0.0] Taille : if inutile
+
+* .5 Exemple sujet th_sujet.adb (.5 pt)
+
+* .5 Test test_th.adb (.5 pt)
+
+* 2 Exécution (2 pt)
+	- 1 th_sujet fonctionne, sans et avec valdrind (1 pt)
+	- 1 test_th fonctionne, sans et avec valdrind (1 pt)
+
+
+
+# 2.75 Exercice 3 : Comparaison (5pt)
+
+* .75 Programmes demandés evaluer_alea_lca.adb et evaluer_alea_th.adb (3 pt)
+	- .25 Qualité algorithmique (1.5 pt)
+		- [-1.0] Mauvaise utilisation de LCA
+		- [-1.0] Pas compris : Il ne s'agit pas de mettre les nombres aléatoires dans la Sda !
+		- [-0.5] Taille codée en dur dans le programme !
+		- [-0.5] fréquence et min/max mélangés
+		- -0.5 pas/peu de commentaires
+		- [-1.0] Le programme ne compile pas
+		- -0.5 erreurs avec valgrind
+		- -0.25 Ne pas utiliser plusieurs fois La_Donnee pour accéder à la même information.
+		- [-0.0] Il serait plus efficace d'utiliser Pour_Chaque
+	- 0 Robustesse/clarté des messages (1 pt)
+		- 0 Robuste (.5 pt)
+			- [-0.5] Erreur sur le Min quand il est nul.
+			- -0.5 Le programme se termine sur une exception non récupérée.
+			- [-0.5] Le programme continue sans valeur pour Taille/Borne si exception
+		- 0 Clarté des messages (.5 pt)
+	- .5 Les deux programmes sont identiques à la SDA près (.5 pt)
+
+* 2 LISEZ-MOI.txt (2 pt)
+	- .5 Qualité du générateur (.5 pt)
+	- .5 Comparaison LCA / TH (.5 pt)
+	- .5 Conclusions argumentées (.5 pt)
+	- .5 Qualité de la présentation (.5 pt)
+
+
+16.75 Note finale (20 pt)
+
+
+<!-- vim: set ts=4 sw=4: -->

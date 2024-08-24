@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# vers R2
+ip link set dev eth0 up
+ip addr add 8.29.2.130/27 dev eth0
+
+# vers DNS
+ip link set dev eth1 up
+ip addr add 8.29.2.225/27 dev eth1
+
+# vers RS 
+ip link set dev eth2 up
+ip addr add 8.29.2.162/27 dev eth2
+
+# routage statique
+#ip route add 8.29.2.192/27 via 8.29.2.161 #RS
+#ip route add 8.29.2.96/27 via 8.29.2.161 #RS
+#ip route add default via 8.29.2.129 #R2
+
+# routage dynamique
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+service quagga start

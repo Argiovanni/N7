@@ -1,0 +1,26 @@
+/* calcule le minimum d'un tableau d'entiers relatifs dans %r2 
+  et l'indice de la première apparition de cette valeur dans %r3
+*/
+N = 11 // taille du tableau
+set Tab1, %r1
+ld [%r1], %r2 // min
+set 0, %r3 // min index
+set 1, %r5 // current index
+
+Tantque: 
+  cmp %r5, N
+  bgeu Stop // branch if r5 greater or equal unsigned to N
+  ld [%r1+%r5] , %r4 // current value
+  cmp %r2 , %r4
+  bgt siAlors // branch if r2 greater than r4
+  ba finSi
+  siAlors : 
+    mov %r4, %r2
+    mov %r5, %r3
+  finSi : 
+    inc %r5
+ba Tantque
+
+Stop : 
+  ba Stop
+Tab1 : .word 10, 9, 8, 7, 1, 6, 5, -4, 3, 1, 2

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# vers R1
+ip link set dev eth0 up
+ip addr add 8.29.2.98/27 dev eth0
+
+# vers Serveur Web
+ip link set dev eth1 up
+ip addr add 8.29.2.193/27 dev eth1
+
+# vers RSR
+ip link set dev eth2 up
+ip addr add 8.29.2.161/27 dev eth2
+
+# routage statique
+#ip route add 8.29.2.224/27 via 8.29.2.162 #RSR
+#ip route add 8.29.2.128/27 via 8.29.2.162 #RSR
+#ip route add default via 8.29.2.97 #R1
+# routage dynamique
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+service quagga start
+
+#bloquer tout
+iptables -P INPUT DROP 
+iptables -P OUTPUT DROP 
+iptables -P FORWARD DROP
+
+#accepter ping
+iptables -A INPUT -p icmp -j ACCEPT
+iptables -A OUTPUT -p icmp -j ACCEPT
+iptables -A FORWARD -p icmp -j ACCEPT
+
+#accepter HTTP
+
+iptables -t filter -d 8.29.2.194/27 -A FORWARD -p tcp --dport 80 -j ACCEPT
+iptables -t filter -s 8.29.2.194/27 -A FORWARD -p tcp --sport 80 -j ACCEPT
+
+#accepter DNS
+
+iptables -t filter -d 8.29.2.226/27 -A FORWARD -p udp --dport 53 -j ACCEPT
+iptables -t filter -s 8.29.2.226/27 -A FORWARD -p udp --sport 53 -j ACCEPT
+
+
+#accepter rip
+
+iptables -A INPUT -p udp --dport 520 -j ACCEPT
+iptables -A FORWARD -p udp --dport 520 -j ACCEPT
+iptables -A OUTPUT -p udp --dport 520 -j ACCEPT
+
+
+

@@ -1,0 +1,61 @@
+/*
+nombre de 'cycles' pour un tableau de 10 éléments : 561
+nombre de 'cycles' pour un tableau de 20 éléments : 1934
+*/
+PILE = 0x200
+N = 20 // taille du tableau
+set PILE, %sp
+set Tab1, %r1
+set N, %r2
+set N, %r9
+call Tri_croissant
+Stop : ba Stop
+
+// renvoie le minimum d'un tableau
+// utilise r5 et r6
+// IN : %r1 le début du tableau et %r2 la taille du tableau
+// OUT : %r3 le min et %r4 son indice dans le tableau
+cal_min :
+  ld [%r1], %r3 // min
+  set 0, %r4 // min index
+  set 1, %r6 // current index
+  Tantque: 
+    cmp %r6, %r2
+    bgeu return // branch if r5 greater or equal unsigned to N
+    ld [%r1+%r6] , %r5 // current value
+    cmp %r3 , %r5
+    bgt siAlors // branch if r2 greater than r4
+    ba finSi
+    siAlors : 
+      mov %r5, %r3
+      mov %r6, %r4
+    finSi : 
+      inc %r6
+  ba Tantque
+  return : 
+ret
+
+//Tri un tableau dans l'ordre croissant par sélection
+// utilise r7 et r8
+// IN :  %r1 le tableau et %r2 la taille du tableau encore à trier et %r9 la taille du tableau
+// OUT: null
+Tri_croissant:
+  clr %r7 // nbr d'element trié du tableau
+  clr %r8 // valeur à echanger avec le min
+  Tri:
+    cmp %r7, %r9 // on stope l'algo quand tous les éléments sauf le dernier sont "triés"
+    be end
+    push %r28
+    call cal_min
+    pop %r28
+    ld [%r1], %r8 // valeur à echanger avec le min
+    st %r3, [%r1]
+    st %r8, [%r1+%r4]
+    inc %r1
+    inc %r7
+    dec %r2
+    ba Tri
+  end :
+ret
+
+Tab1 : .word 10, 2, 8, 5, 1, -6, 7, 4, 3, 9, -8, 6, 5, -3, 12, 0, -4, -10, 2, -9

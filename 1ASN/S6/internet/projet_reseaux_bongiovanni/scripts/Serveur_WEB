@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# vers RS
+ip link set dev eth0 up
+ip addr add 8.29.2.194/27 dev eth0
+
+# tout via RS
+ip route add default via 8.29.2.193

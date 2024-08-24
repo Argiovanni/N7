@@ -1,0 +1,82 @@
+network:
+  name: projet_reseaux_bongiovanni
+  version: 0.1
+  hosts:
+    - client1
+      mode : netns
+      init : ./scripts/client1
+ 
+    - serveur_user
+      mode : docker
+      image : apache_n7:latest
+      files : ./files/serveur_user/var:/
+ 
+ 
+    - routeur_FAI
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/routeur_FAI/etc:/
+ 
+ 
+    - R1
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/R1/etc:/
+ 
+    - R2
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/R2/etc:/
+ 
+    - Serveur_WEB
+      mode : docker
+      image : apache_n7:latest
+      files : ./files/Serveur_WEB/var:/
+ 
+    - Serveur_DNS
+      mode : docker
+      image : dns_n7:latest
+      files : ./files/Serveur_DNS/etc:/
+ 
+    - box1
+      mode : docker
+      image : dhcp_n7:latest
+      files : ./files/box1/etc:/
+ 
+    - box2
+      mode : docker
+      image : dhcp_n7:latest
+      files : ./files/box2/etc:/
+ 
+    - routeur_services
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/routeur_services/etc:/
+ 
+    - routeur_services_reseaux
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/routeur_services_reseaux/etc:/
+ 
+    - client2
+      mode : netns
+      init : ./scripts/client2
+ 
+  links :
+    - client1:eth0!box1:eth0
+    - box1:eth1!routeur_FAI:eth0
+    - box2:eth1!routeur_FAI:eth1
+    - R1:eth1!routeur_services:eth0
+    - routeur_services:eth1!Serveur_WEB:eth0
+    - R2:eth1!routeur_services_reseaux:eth0
+    - routeur_services_reseaux:eth1!Serveur_DNS:eth0
+    - routeur_services:eth2!routeur_services_reseaux:eth2
+ 
+  bridges:
+    - Switch0
+      interfaces: box2:eth0!serveur_user:eth0!client2:eth0!
+    - Switch1
+      interfaces: R1:eth0!R2:eth0!routeur_FAI:eth2!
+ 
+  consoles :
+    - all

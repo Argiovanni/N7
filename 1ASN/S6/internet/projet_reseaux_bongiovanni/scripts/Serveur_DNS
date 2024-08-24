@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# vers RSR
+ip link set dev eth0 up
+ip addr add 8.29.2.226/27 dev eth0
+
+# tout via RSR
+ip route add default via 8.29.2.225
+
+service bind9 start

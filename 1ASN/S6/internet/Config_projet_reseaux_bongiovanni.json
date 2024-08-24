@@ -1,0 +1,39 @@
+{
+  "Name": "projet_reseaux_bongiovanni",
+  "Hosts": [
+    { "Name": "client1", "Type": "Client", "Interfaces": "1" },
+    { "Name": "serveur_user", "Type": "WEB", "Interfaces": "1" },
+    { "Name": "Switch1", "Type": "Switch", "Interfaces": "16" },
+    { "Name": "routeur_FAI", "Type": "Routeur", "Interfaces": "3" },
+    { "Name": "Switch2", "Type": "Switch", "Interfaces": "16" },
+    { "Name": "R1", "Type": "Routeur", "Interfaces": "2" },
+    { "Name": "R2", "Type": "Routeur", "Interfaces": "2" },
+    { "Name": "Serveur_WEB", "Type": "WEB", "Interfaces": "1" },
+    { "Name": "Serveur_DNS", "Type": "DNS", "Interfaces": "1" },
+    { "Name": "box1", "Type": "DHCP", "Interfaces": "2" },
+    { "Name": "box2", "Type": "DHCP", "Interfaces": "2" },
+    { "Name": "routeur_services", "Type": "Routeur", "Interfaces": "3" },
+    { "Name": "routeur_services_reseaux", "Type": "Routeur", "Interfaces": "3"},
+    { "Name": "client2", "Type": "Client", "Interfaces": "1" }
+  ],
+  "Links": [
+    { "H1": "client1", "I1": "eth0", "H2": "box1", "I2": "eth0" },
+    { "H1": "box1", "I1": "eth1", "H2": "routeur_FAI", "I2": "eth0" },
+    { "H1": "box2", "I1": "eth1", "H2": "routeur_FAI", "I2": "eth1" },
+    { "H1": "R1", "I1": "eth1", "H2": "routeur_services", "I2": "eth0" },
+    { "H1": "routeur_services", "I1": "eth1", "H2": "Serveur_WEB", "I2": "eth0" },
+    { "H1": "R2", "I1": "eth1", "H2": "routeur_services_reseaux", "I2": "eth0" },
+    { "H1": "routeur_services_reseaux", "I1": "eth1", "H2": "Serveur_DNS", "I2": "eth0" },
+    { "H1": "routeur_services", "I1": "eth2", "H2": "routeur_services_reseaux", "I2": "eth2" }
+  ],
+  "Bridges": [
+    {
+      "Hosts": ["box2", "serveur_user", "client2"],
+      "Interfaces": ["eth0", "eth0", "eth0"]
+    },
+    {
+      "Hosts": ["R1", "R2", "routeur_FAI"],
+      "Interfaces": ["eth0", "eth0", "eth2"]
+    }
+  ]
+}

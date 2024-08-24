@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# vers box2
+ip link set dev eth0 up
+ip addr add 192.168.84.194/26 dev eth0
+# ip route add default via 192.168.84.195
+
+dhclient eth0
+
+service apache2 start

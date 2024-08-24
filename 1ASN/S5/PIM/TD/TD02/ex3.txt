@@ -1,0 +1,30 @@
+Prog 1 (nb parfait de 2 à un entier donné)
+    R0: afficher dans l'ordre croissant les nombre parfait entre 2 et un entier lu au clavier
+        ex: donné exemple de nbr parfait
+
+    R1: comment "R0" ?             /!\ éviter au maximum d'avoir des action élémentaire dans R1
+        Demander nbr a user                 nbr : OUT INT
+            {nbr >=2 }
+        pour i <- 2 jusqu'à nbr faire       nbr : IN
+            si i est parfait alors          
+                afficher i 
+            sinon 
+                rien
+            fin si
+        fin pour
+    
+    R2: comment [determiner] "i est parfait" ?
+        calculer la somme des diviseur de i     somme : OUT INT
+        resultat <- i == somme
+    
+    R3: comment "calculer la somme des diviseur de i"?  nb: en ada, le compilateur force sqrt à être entier ?
+        somme <- 1
+        pour k <- 2 jusqu'à sqrt(i)         (car si i = a*b en trouvant a je trouve b)
+            si k est diviseur de i alors
+                somme <- somme + k + i div k
+            fin si
+        fin pour
+        si i est carré parfait alors
+            somme <- somme - sqrt(i)
+
+

@@ -1,0 +1,120 @@
+/*
+r17 : num du prog
+r18 : nbr de prg (ici 2)
+r19 : adresse de tab_sp
+*/
+SWITCHES = 0x90000000
+LEDS = 0xB0000000
+N=1
+
+ba prog_principal
+
+handler:
+  push %r1
+  push %r2
+  push %r3
+  push %r4
+  push %r5
+  push %r6
+  push %r7
+  push %r8
+  push %r9
+  push %r10
+  push %r28
+  st %sp, [%r19+%r17]
+  // swap de prgm
+  inc %r17
+  cmp %r17, %r18
+  bgt SI
+  ba FinSI
+  SI:
+    set 1, %r17
+  FinSI:
+  ld [%r19+%r17], %sp
+  pop %r28
+  pop %r10
+  pop %r9
+  pop %r8
+  pop %r7
+  pop %r6
+  pop %r5
+  pop %r4
+  pop %r3
+  pop %r2
+  pop %r1
+  reti
+  
+prog_principal :
+  set N, %r3
+  set 1, %r17
+  set 2, %r18
+  set Tab_sp, %r19
+  ld [%r19 + %r18], %sp
+  set prog2 ,%r16
+  push %r16
+  push %r0 // NVZC
+  push %r1
+  push %r2
+  push %r3
+  push %r4
+  push %r5
+  push %r6
+  push %r7
+  push %r8
+  push %r9
+  push %r10
+  push %r28
+  st %sp, [%r19+%r18]
+  ld [%r19 + %r17], %sp
+  set LEDS, %r20
+  call prog1
+
+prog1:
+  inc %r1
+  push %r28
+  call afficher_leds_7_0
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog1
+
+prog2: 
+  inc %r1
+  push %r28
+  call afficher_leds_15_8
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog2
+  
+wait : 
+  startWait :
+    cmp %r3, 0
+    be stopWait
+    dec %r3
+    ba startWait
+  stopWait :
+    set N, %r3
+  ret
+
+// afiche un entier sur les 8 leds de poids faible et met à 0 les 8 autres.
+// in : %r1 l'entier à afficher
+// out : ~~
+afficher_leds_7_0 :
+  and %r1 , 0xFF, %r1
+  set LEDS, %r2
+  st %r1, [%r2]
+  ret
+  
+// afiche un entier sur les 8 leds de poids fort et met à 0 les 8 autres.
+// in : %r1 l'entier à afficher
+// out : ~~
+afficher_leds_15_8:
+  sll %r1, 8, %r4
+  set LEDS, %r2
+  st %r4, [%r2]
+  ret
+
+Tab_sp : .word 0, 0x200, 0x400

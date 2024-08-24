@@ -1,0 +1,367 @@
+/*
+r17 : num du prog
+r18 : nbr de prg (ici 2)
+r19 : adresse de tab_sp
+*/
+SWITCHES = 0x90000000
+LEDS = 0xB0000000
+N=1
+
+ba prog_principal
+
+handler:
+  push %r1
+  push %r2
+  push %r3
+  push %r4
+  push %r5
+  push %r6
+  push %r7
+  push %r8
+  push %r9
+  push %r10
+  push %r28
+  st %sp, [%r19+%r17]
+  // swap de prgm
+  inc %r17
+  cmp %r17, %r18
+  bgt SI
+  ba FinSI
+  SI:
+    set 1, %r17
+  FinSI:
+  ld [%r19+%r17], %sp
+  pop %r28
+  pop %r10
+  pop %r9
+  pop %r8
+  pop %r7
+  pop %r6
+  pop %r5
+  pop %r4
+  pop %r3
+  pop %r2
+  pop %r1
+  reti
+  
+prog_principal :
+  set N, %r3
+  set 1, %r17
+  set 16, %r18
+  set Tab_sp, %r19
+  set Tab_prog, %r16
+  set Tab_led, %r15
+  set 2, %r13 // variable de boucle pour l'initialisation
+  //boucle for
+  Init:
+    cmp %r13,%r18
+    bgt Fin_init  
+    ld [%r19 + %r13], %sp
+    ld [%r16 + %r13], %r14 // adresse du prog courant
+    push %r14
+    push %r0 // NVZC
+    push %r1
+    push %r2
+    push %r3
+    push %r4
+    push %r5
+    push %r6
+    push %r7
+    push %r8
+    push %r9
+    push %r10
+    push %r28
+    st %sp, [%r19+%r13]
+    inc %r13
+    ba Init
+  Fin_init :
+    clr %r13
+    ld [%r19 + %r17], %sp
+    set LEDS, %r20
+    call prog1
+
+prog1:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog1
+
+prog2:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog2
+
+prog3:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog3
+
+prog4:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog4
+  
+prog5:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog5
+  
+prog6:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog6
+  
+prog7:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog7
+  
+prog8:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog8
+  
+prog9:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog9
+  
+prog10:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog10
+  
+prog11:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog11
+  
+prog12:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog12
+  
+prog13:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog13
+  
+prog14:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog14
+  
+prog15:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog15
+  
+prog16:
+  ld [%r15 + %r17], %r1
+  push %r28
+  call afficher_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  push %r28
+  call eteindre_led
+  pop %r28
+  push %r28
+  call wait
+  pop %r28
+  ba prog16
+  
+wait : 
+  startWait :
+    cmp %r3, 0
+    ble stopWait
+    dec %r3
+    ba startWait
+  stopWait :
+    set N, %r3
+  ret
+
+// afiche un entier compris entre 1 et 16 sur la led correspondante.
+// in : %r1 l'entier à afficher
+// out : ~~
+afficher_led :
+  set LEDS, %r2
+  st %r1, [%r2]
+  ret
+
+eteindre_led :
+  set LEDS, %r2
+  st %r0, [%r2]
+  ret
+
+
+Tab_sp : .word 0, 0x400, 0x600, 0x800, 0xA00, 0xC00, 0xE00, 0x1000, 0x1200, 0x1400, 0x1600, 0x1800, 0x1A00, 0x1C00, 0x1E00, 0x2000, 0x2200
+Tab_prog : .word 0, prog1, prog2, prog3, prog4, prog5, prog6, prog7, prog8, prog9, prog10, prog11, prog12, prog13, prog14, prog15, prog16
+Tab_led : .word 0,0b0000000000000001,0b0000000000000010,0b0000000000000100,0b0000000000001000,0b0000000000010000,0b0000000000100000,
+                0b0000000001000000,0b0000000010000000,0b0000000100000000,0b0000001000000000,0b0000010000000000,0b0000100000000000,
+                0b0001000000000000,0b0010000000000000,0b0100000000000000,0b1000000000000000

@@ -1,0 +1,16 @@
+Procédure supprimer
+
+Il est inutile de faire appel à Cle_Présente dans Supprimer.
+Dans ton appel récursif si tu arrive sur null c'est qu'elle n'est pas là.
+Tu mélanges récursivité et itération. Fais un choix.
+
+Afficher_Debug
+
+Peut être modifier la procédure en cas de problème sur l'affichage d'une clé
+ou d'une valeur afin de continuer la procédure sur les éléments suivants.
+
+
+Remarques générales
+
+Compléter le fichier lca_sujet pour tester plus de procédures et libérer la mémoire.
+Bien dans l'ensemble !

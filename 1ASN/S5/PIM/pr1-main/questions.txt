@@ -1,0 +1,109 @@
+Auteur 1 (exercice 1 & 3) : Arthur BONGIOVANNI
+Auteur 2 (exercice 2) 	: Léa HOUOT
+
+Vous devez répondre de manière courte aux questions suivantes.
+Il n'est pas demandé de modifier le programme que vous avez écrit mais
+simplement d'expliquer les modifications qu'il faudrait y apporter.
+
+Il faut remplacer les « ... » par votre réponse en laissant les lignes
+blanches avant et après.
+
+--------------------------------------------------------------------------------
+C1. Que se passe-t-il si dans Jeu_Devin_Exo2 l'utilisateur répond d'abord trop
+grand puis toujours trop petit ?
+--------------------------------------------------------------------------------
+
+Réponse : Le programme va finir par renvoyer qu’il y a une tricherie.
+
+
+--------------------------------------------------------------------------------
+C2. Est-on sûr que Jeu_Devin_Exo1 se termine ?  Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : Non car l’avancement de l'exécution du programme dépend d’action de l’utilisateur, si celui-ci arrête de faire des propositions, le programme reste en suspens. De plus, si l’utilisateur n’arrive pas à deviner le nombre, ou se trompe continuellement, le programme ne se terminera jamais.
+
+
+--------------------------------------------------------------------------------
+C3. Est-on sûr que Jeu_Devin_Exo2 se termine ?  Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : Tant que l’utilisateur répond, le jeu se terminera. Si il ne répond pas à l’ordinateur qu’il a trouvé le nombre au bout d’un moment l’ordinateur va trouver une tricherie.
+
+
+--------------------------------------------------------------------------------
+F1. Les noms Jeu_Devin_Exo1, Jeu_Devin_Exo2 et Jeu_Devin_Exo3 ne sont pas très
+parlants.  Par quoi pourrait-on les remplacer ?
+--------------------------------------------------------------------------------
+
+Réponse : 	Jeu_Devin_Exo1 -> User_guess
+		Jeu_Devin_Exo2 -> CPU_guess
+		Jeu_Devin_Exo3 -> Jeu_Devin ou Main_game
+
+
+
+
+--------------------------------------------------------------------------------
+E1. Quelles sont les modifications à apporter à votre programme pour chercher
+des nombres compris entre 1 et 9999 ?
+--------------------------------------------------------------------------------
+
+Réponse : Ajouter des variables globale min et max (toutes 2 des Entiers) et fixer la valeur de min à 1 et celle de max à 9999 avant d’instancier le nombre aléatoire en utilisant ces variables (permet donc de pouvoir facilement modifier la plage de nombre permis). (programme 1)
+
+Pour le second jeu, ces variable serviront de bornes pour la recherche par dichotomie
+
+
+--------------------------------------------------------------------------------
+E2. Quelles sont les modifications à apporter pour que que l'utilisateur
+puisse utiliser aussi les caractères <, > et = pour indiquer si le nombre
+proposé est trop petit, trop grand ou le bon ?
+--------------------------------------------------------------------------------
+
+Réponse : Il faut ajouter dans la partie “compréhension de l’indication” , on peut ajouter dans le “Selon” si en fonction de si le nombre est plus grand on peut mettre when 'P' | 'p' | '>' de même pour ‘<’ et ‘=’.
+
+
+--------------------------------------------------------------------------------
+E3. On veut limiter le nombre de tentatives à 10.  Si le nombre n'a pas été
+trouvé avant, le joueur a perdu.  Comment prendre en compte cette évolution ?
+--------------------------------------------------------------------------------
+
+Réponse : on pourrait rajouter une constante “ nb_tentative_max” qui contiendrait la valeur 10 dans ce cas et il suffirait de rajouter une vérification avant la tentative 
+(basiquement rajouter : 	
+if nb_essais >= nb_tentative_max then
+			– Le joueur à perdu
+		else
+			– programme normal
+au début du ‘répéter’ de la partie : “faire deviner le nombre à l'utilisateur”)
+
+
+--------------------------------------------------------------------------------
+E4. La recherche dichotomique conduit à toujours proposer les mêmes nombres.
+Comment faire pour donner l'impression que le programme joue comme un humain
+tout en restant efficace ?
+--------------------------------------------------------------------------------
+
+Réponse : Pour donner plus un côté “humain” on peut faire en sorte que le programme ne renvoie que des multiple de 10 ou de 5 jusqu’à ce qu’on ai la différence entre la borne minimum et la borne maximum inférieure ou égale à 5.
+
+
+--------------------------------------------------------------------------------
+E5. Actuellement, l'utilisateur doit attendre la fin d'un jeu pour quitter le
+programme.  On veut qu'il puisse le faire dès qu'il saisit 0 quand on lui pose
+une question. Le programme doit alors dire que l'utilisateur a abandonné la
+partie.  Comment faire ?
+--------------------------------------------------------------------------------
+
+Réponse : 
+	Il suffit de rajouter une option dans le case (exo2) ou un elif (ex1) permettant de traiter cette indication. (dans le cas de l’ex1, il faudrait prendre en compte le fait que cette entrée est un char et non un integer)
+	Le traitement pourrait être le changement de valeur d’une variable booléenne en True et d’intégrer cette variable à la condition de boucle (ex: while not abandon / loop .. exit when abandon)
+
+
+--------------------------------------------------------------------------------
+E6. Quand le programme détecte que l'utilisateur a triché, comment faire pour
+que le programme explique au joueur quand il a triché ?
+--------------------------------------------------------------------------------
+
+Réponse : Il faut différencier les différentes triches, donc créer une variable booléenne pour chaque et quand le programme dit que l’utilisateur a triché ajouter une phrase disant la triche. De plus, lorsque l’utilisateur triche en disant que le nombre est trop grand ou trop petit alors que c'est la borne minimum ou maximum, on peut ajouter une phrase disant qu’il est impossible que le nombre proposé soit trop grand ou trop petit en fonction de la situation.
+
+
+--------------------------------------------------------------------------------
+
+

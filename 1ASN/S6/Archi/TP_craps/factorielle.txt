@@ -1,0 +1,76 @@
+/*
+r28 contient l'adresse de la commande à l'origine de l'appel du sous-programme
+Au début de l'exécution du sous-programme, le pointeur de pile pointe sur la valeur de N (ici 5) 
+mais indique une pile vide à la fin de son exécution
+La valeur maximal de N est 12 (c en hexadécimal) car 13! est supérieur à 16⁸ - 1 (ffffffff en hexadécimal), soit la plus grand valeur possible pour un mot de 32 bit
+
+partie appel recursif:
+ contenu de la pile à l'entré des appels du sous-programme : 
+   1     |    2     |    3
+00000005 | 00000004 | 00000003         
+         | 00000004 | 0000001a  
+         | 00000005 | 00000004
+                    | 00000004
+                    | 00000005
+
+ contenu de la pile a la sortie des appels du sous-programme :
+   1     |    2     |    3
+0000001a | 0000001a | 0000001a
+00000001 | 00000002 | 00000003 
+0000001a | 0000001a | 0000001a
+00000002 | 00000003 | 00000004
+0000001a | 0000001a | 00000004
+00000003 | 00000004 | 00000005
+0000001a | 00000004 |
+00000004 | 00000005 |
+00000004 |           
+00000005 |
+*/
+
+/* programme principal */
+PILE = 0x200 // fond de pile à l’adresse 0x200
+N=5
+set PILE, %sp
+//initialisation du pointeur de pile : ABSOLUMENT NECESSAIRE
+set N, %r1
+call Factorielle_rec // factorille(N) – résultat dans r2
+Stop :
+  ba Stop
+
+// calcule la factorielle d’un entier naturel (itératif)
+// IN : r1, contient le nombre dont veut calculer la factorielle
+// OUT : r2, contient le résultat
+Factorielle: 
+  push %r1
+    // r1 modifié dans le sous-programme : il doit donc être
+    // sauvegardé dans la pile à l’entrée et restauré à la sortie
+  set 1, %r2  // factorielle(0) ou factorielle(1)
+  Tantque:
+    cmp %r1, 1
+    bleu Retour // branchement à Retour si r1 <= 1
+    umulcc %r1, %r2, %r2 // r2 <- r1 * r2
+    dec %r1
+    ba Tantque
+  Retour:
+    pop %r1 // restaurer r1 qui doit retrouver sa valeur d’entrée
+ret
+
+// algo recursif pour le calcul de la factoriell
+// IN : r1, contient le nombre dont veut calculer la factorielle
+// OUT : r2, contient le résultat
+Factorielle_rec:
+  push %r1
+  cmp %r1, 0
+  be fin // branchement à Retour si r1 == 0
+  dec %r1
+  push %r28
+  call Factorielle_rec
+  pop %r28
+  inc %r1
+  umulcc %r1, %r2, %r2 // r2 <- r1 * r2
+  ba fin_fact_rec
+  fin : 
+    set 1, %r2
+  fin_fact_rec :
+    pop %r1
+ret

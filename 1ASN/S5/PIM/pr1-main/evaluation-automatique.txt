@@ -1,0 +1,208 @@
+% Validation de B1
+% 2023-10-27 14:39:44.284689
+
+
+################################################################################
+# Modification des fichiers fournis
+################################################################################
+
+
+================================================================================
+## Fichiers qui NE devaient PAS être modifiés
+================================================================================
+
+* Fichier alea.adb non modifié... ok
+* Fichier alea.ads non modifié... ok
+
+================================================================================
+## Fichiers qui DEVAIENT être modifiés
+================================================================================
+
+* Fichier jeu_devin_exo1.adb modifié... ok
+* Fichier jeu_devin_exo2.adb modifié... ok
+* Fichier jeu_devin_exo3.adb modifié... ok
+* Fichier questions.txt modifié... ok
+* Fichier rapport.pdf modifié... ok
+
+
+################################################################################
+# Nettoyer
+################################################################################
+
+* Running gnatclean... ok
+
+
+################################################################################
+# Compilations
+################################################################################
+
+* Compilation de jeu_devin_exo1.adb... ok
+* Compilation de jeu_devin_exo2.adb... ok
+* Compilation de jeu_devin_exo3.adb... ok
+* Running gnatclean... ok
+
+
+################################################################################
+# Exécutions
+################################################################################
+
+* Running gnatclean... ok
+
+================================================================================
+## Exécution de jeu_devin_exo1
+================================================================================
+
+* Compilation de jeu_devin_exo1.adb... ok
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo1-sujet1.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo1 < "900 10000 990 988 422 420 421"... ok
+* Comparaison de jeu_devin_exo1-sujet1.expected et jeu_devin_exo1-sujet1.out... différents
+
+   | J'ai choisi un nombre compris entre 1 et 999. |  Jeu_Devin_Exo1 : a faire !
+   |                                               >  J'ai choisi un nombre compris entre 1 et 999
+   | Trouve.                                       |  Trouve
+   | Bravo. Vous avez trouve 421 en 7 essais.      |
+   |                                               >  Bravo. Vous avez trouve 421 en 7 essaie(s).
+
+
+================================================================================
+## Exécution de jeu_devin_exo2
+================================================================================
+
+* Compilation de jeu_devin_exo2.adb... ok
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo2-sujet1.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo2 < "o g x t"... ok
+* Comparaison de jeu_devin_exo2-sujet1.expected et jeu_devin_exo2-sujet1.out... différents
+
+   | Je n'ai pas compris. Merci de repondre :                    |  Je n'ai pas compris merci de repondre :
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo2-triche499.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo2 < "o g p p p p p p p p p"... ERREUR
+
+  ! raised ADA.IO_EXCEPTIONS.END_ERROR : a-textio.adb:517
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo2-sujet2.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo2 < "x O o T"... ok
+* Comparaison de jeu_devin_exo2-sujet2.expected et jeu_devin_exo2-sujet2.out... différents
+
+   | J'attends...                                                <
+   | Avez-vous choisi un nombre compris entre 1 et 999 (o/n) ? o <
+   |                                                             >  Trop (g)rand, trop (p)etit ou (t)rouve ?o
+   |                                                             >  Je n'ai pas compris merci de repondre :
+   |                                                             >  g si ma proposition est trop grande
+   |                                                             >  p si ma proposition est trop petite
+   |                                                             >  t si j'ai trouve le nombre
+   | J'ai trouve 500 en 1 essai.                                 |  J'ai trouve 500 en 1 essais.
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo2-triche1000.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo2 < "o p p p p p p p p p p"... ERREUR
+
+  ! raised ADA.IO_EXCEPTIONS.END_ERROR : a-textio.adb:517
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo2-triche0.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo2 < "o g g g g g g g g g"... ERREUR
+
+  ! raised ADA.IO_EXCEPTIONS.END_ERROR : a-textio.adb:517
+
+
+================================================================================
+## Exécution de jeu_devin_exo3
+================================================================================
+
+* Compilation de jeu_devin_exo3.adb... ok
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo3-exemple1.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo3 < "3 4 0"... ok
+* Comparaison de jeu_devin_exo3-exemple1.expected et jeu_devin_exo3-exemple1.out... différents
+
+   |                                                         |  Jeu_Devin_Exo3 : a changer !
+   | Votre choix : 3                                         |  Votre choix ? : 
+   |                                                         |  3
+   | Choix incorrect.                                        |  Choix incorrect
+   |                                                         <
+   | Votre choix : 4                                         |  Votre choix ? : 
+   |                                                         |  4
+   | Choix incorrect.                                        |  Choix incorrect
+   |                                                         <
+   | Votre choix : 0                                         |  Votre choix ? : 
+   |                                                         |  0
+   |                                                         <
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo3-exemple3.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo3 < "1 900 100 421 2 o t 1 421 0"... ok
+* Comparaison de jeu_devin_exo3-exemple3.expected et jeu_devin_exo3-exemple3.out... différents
+
+   |                                                             |  Jeu_Devin_Exo3 : a changer !
+   | Votre choix : 1                                             |  Votre choix ? : 
+   |                                                             |  1
+   | J'ai choisi un nombre compris entre 1 et 999.               |  Jeu_Devin_Exo1 : a faire !
+   |                                                             >  J'ai choisi un nombre compris entre 1 et 999
+   | Trouve.                                                     |  Trouve
+   | Bravo. Vous avez trouve 421 en 3 essais.                    <
+   |                                                             >  Bravo. Vous avez trouve 421 en 3 essaie(s).
+   | Votre choix : 2                                             |  Votre choix ? : 
+   |                                                             |  2
+   | J'ai trouve 500 en 1 essai.                                 |  J'ai trouve 500 en 1 essais.
+   |                                                             <
+   | Votre choix : 1                                             |  Votre choix ? : 
+   |                                                             |  1
+   | J'ai choisi un nombre compris entre 1 et 999.               |  Jeu_Devin_Exo1 : a faire !
+   |                                                             >  J'ai choisi un nombre compris entre 1 et 999
+   | Trouve.                                                     |  Trouve
+   | Bravo. Vous avez trouve 421 en 1 essai.                     <
+   |                                                             >  Bravo. Vous avez trouve 421 en 1 essaie(s).
+   | Votre choix : 0                                             |  Votre choix ? : 
+   |                                                             |  0
+   |                                                             <
+
+
+--------------------------------------------------------------------------------
+### Test jeu_devin_exo3-exemple2.in
+--------------------------------------------------------------------------------
+
+* ./jeu_devin_exo3 < "3 -1 0"... ok
+* Comparaison de jeu_devin_exo3-exemple2.expected et jeu_devin_exo3-exemple2.out... différents
+
+   |                                                         |  Jeu_Devin_Exo3 : a changer !
+   | Votre choix : 3                                         |  Votre choix ? : 
+   |                                                         |  3
+   | Choix incorrect.                                        |  Choix incorrect
+   |                                                         <
+   | Votre choix : -1                                        |  Votre choix ? : 
+   |                                                         |  -1
+   | Choix incorrect.                                        |  Choix incorrect
+   |                                                         <
+   | Votre choix : 0                                         |  Votre choix ? : 
+   |                                                         |  0
+   |                                                         <
+

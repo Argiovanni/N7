@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# vers FAI
+ip link set dev eth0 up 
+ip addr add 8.29.2.66/27 dev eth0
+
+# vers RS
+ip link set dev eth1 up
+ip addr add 8.29.2.97/27 dev eth1
+
+#routage statique
+#ip route add 8.29.2.128/27 via 8.29.2.67 #R2
+#ip route add 8.29.2.160/27 via 8.29.2.98 #RS
+#ip route add 8.29.2.192/27 via 8.29.2.98 #RS
+#ip route add 8.29.2.224/27 via 8.29.2.98 #RS
+#ip route add default via 8.29.2.65 # R_FAI
+
+# routage dynamique
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+service quagga start
