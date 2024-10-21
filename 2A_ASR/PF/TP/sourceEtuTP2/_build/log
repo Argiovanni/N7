@@ -1,0 +1,25 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/argio/.cache/dune/db
+# Workspace root: /home/argio/Bureau/N7_FISE/2A_ASR/PF/TP/sourceEtuTP2
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/argio/.opam/4.11.0/bin/ocamlc.opt -config > /tmp/dune_a22b6c_output
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp2"' -o tp2.pp.ml --impl tp2.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamldep.opt -modules -impl tp2.pp.ml) > _build/default/.tp2.objs/tp2.impl.d
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp2.objs/byte -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -no-alias-deps -opaque -open Tp2__ -o .tp2.objs/byte/tp2.cmo -c -impl tp2.pp.ml)
+> File "tp2.ml", line 130, characters 0-11:
+> 130 | open Lexing
+>       ^^^^^^^^^^^
+> Warning 33: unused open Stdlib.Lexing.
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o tp2.cma .tp2.objs/byte/tp2__.cmo .tp2.objs/byte/tp2__Parser.cmo .tp2.objs/byte/tp2__Lexer.cmo .tp2.objs/byte/tp2.cmo)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.bc /home/argio/.opam/4.11.0/lib/ocaml/compiler-libs/ocamlcommon.cma /home/argio/.opam/4.11.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /home/argio/.opam/4.11.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/argio/.opam/4.11.0/lib/findlib/findlib.cma /home/argio/.opam/4.11.0/lib/findlib/findlib_top.cma /home/argio/.opam/4.11.0/lib/logs/logs.cma /home/argio/.opam/4.11.0/lib/lwt/lwt.cma /home/argio/.opam/4.11.0/lib/logs/logs_lwt.cma /home/argio/.opam/4.11.0/lib/ocaml/unix.cma /home/argio/.opam/4.11.0/lib/ocaml/bigarray.cma /home/argio/.opam/4.11.0/lib/ocplib-endian/ocplib_endian.cma /home/argio/.opam/4.11.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /home/argio/.opam/4.11.0/lib/ocaml/threads/threads.cma /home/argio/.opam/4.11.0/lib/lwt/unix/lwt_unix.cma -I /home/argio/.opam/4.11.0/lib/lwt/../stublibs /home/argio/.opam/4.11.0/lib/react/react.cma /home/argio/.opam/4.11.0/lib/lwt_react/lwt_react.cma /home/argio/.opam/4.11.0/lib/result/result.cma /home/argio/.opam/4.11.0/lib/uutf/uutf.cma /home/argio/.opam/4.11.0/lib/uucp/uucp.cma /home/argio/.opam/4.11.0/lib/uuseg/uuseg.cma /home/argio/.opam/4.11.0/lib/zed/zed.cma /home/argio/.opam/4.11.0/lib/trie/trie.cma /home/argio/.opam/4.11.0/lib/mew/mew.cma /home/argio/.opam/4.11.0/lib/mew_vi/mew_vi.cma /home/argio/.opam/4.11.0/lib/lambda-term/lambda_term.cma -I /home/argio/.opam/4.11.0/lib/lambda-term/../stublibs /home/argio/.opam/4.11.0/lib/xdg/xdg.cma -I /home/argio/.opam/4.11.0/lib/xdg/../stublibs /home/argio/.opam/4.11.0/lib/utop/uTop.cma /home/argio/.opam/4.11.0/lib/ppx_inline_test/config/inline_test_config.cma /home/argio/.opam/4.11.0/lib/base/base_internalhash_types/base_internalhash_types.cma -I /home/argio/.opam/4.11.0/lib/base/../stublibs /home/argio/.opam/4.11.0/lib/base/caml/caml.cma /home/argio/.opam/4.11.0/lib/sexplib0/sexplib0.cma /home/argio/.opam/4.11.0/lib/base/shadow_stdlib/shadow_stdlib.cma /home/argio/.opam/4.11.0/lib/base/base.cma -I /home/argio/.opam/4.11.0/lib/base/../stublibs /home/argio/.opam/4.11.0/lib/jane-street-headers/jane_street_headers.cma /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cma /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib/ppx_compare_lib.cma /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cma /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib/ppx_hash_lib.cma /home/argio/.opam/4.11.0/lib/time_now/time_now.cma -I /home/argio/.opam/4.11.0/lib/time_now/../stublibs /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cma tp2.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
