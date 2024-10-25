@@ -1,0 +1,143 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/argio/.cache/dune/db
+# Workspace root: /home/argio/Bureau/N7_FISE/2A_ASR/PF/TP/BE-23-24/sourceEtu
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/argio/.opam/4.11.0/bin/ocamlc.opt -config > /tmp/dune_2eb99a_output
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="be"' -o arbre.pp.ml --impl arbre.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamldep.opt -modules -impl arbre.pp.ml) > _build/default/.be.objs/be__Arbre.impl.d
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .be.objs/byte -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -no-alias-deps -opaque -open Be -o .be.objs/byte/be__Arbre.cmo -c -impl arbre.pp.ml)
+> File "arbre.ml", lines 12-13, characters 19-90:
+> 12 | ...................(Noeud(_, l_tree)) = 
+> 13 |     (List.length l_tree = B.base) && (List.fold_left (&&) true (List.map conforme l_tree))
+> Warning 8: this pattern-matching is not exhaustive.
+> Here is an example of a case that is not matched:
+> Vide
+> File "arbre.ml", line 2, characters 0-10:
+> 2 | open Liste
+>     ^^^^^^^^^^
+> Warning 33: unused open Be.Liste.
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .be.objs/byte -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -no-alias-deps -opaque -open Be -o .be.objs/byte/be__Natset.cmo -c -impl natset.pp.ml)
+> File "natset.ml", line 1, characters 0-9:
+> 1 | open Base
+>     ^^^^^^^^^
+> Warning 33: unused open Be.Base.
+> File "natset.ml", line 2, characters 0-15:
+> 2 | open Conversion
+>     ^^^^^^^^^^^^^^^
+> Warning 33: unused open Be.Conversion.
+> File "natset.ml", line 3, characters 0-10:
+> 3 | open Arbre
+>     ^^^^^^^^^^
+> Warning 33: unused open Be.Arbre.
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -w -24 -g -g -bin-annot -I .be.inline-tests/.be.inline-tests.eobjs/byte -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runner/lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -I .be.objs/byte -no-alias-deps -o .be.inline-tests/.be.inline-tests.eobjs/byte/dune__exe__Inline_test_runner_be.cmo -c -impl .be.inline-tests/inline_test_runner_be.ml-gen)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .be.objs/byte -I .be.objs/native -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Be -o .be.objs/native/be__Arbre.cmx -c -impl arbre.pp.ml)
+> File "arbre.ml", lines 12-13, characters 19-90:
+> 12 | ...................(Noeud(_, l_tree)) = 
+> 13 |     (List.length l_tree = B.base) && (List.fold_left (&&) true (List.map conforme l_tree))
+> Warning 8: this pattern-matching is not exhaustive.
+> Here is an example of a case that is not matched:
+> Vide
+> File "arbre.ml", line 2, characters 0-10:
+> 2 | open Liste
+>     ^^^^^^^^^^
+> Warning 33: unused open Be.Liste.
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .be.objs/byte -I .be.objs/native -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Be -o .be.objs/native/be__Natset.cmx -c -impl natset.pp.ml)
+> File "natset.ml", line 1, characters 0-9:
+> 1 | open Base
+>     ^^^^^^^^^
+> Warning 33: unused open Be.Base.
+> File "natset.ml", line 2, characters 0-15:
+> 2 | open Conversion
+>     ^^^^^^^^^^^^^^^
+> Warning 33: unused open Be.Conversion.
+> File "natset.ml", line 3, characters 0-10:
+> 3 | open Arbre
+>     ^^^^^^^^^^
+> Warning 33: unused open Be.Arbre.
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o be.cmxa .be.objs/native/be.cmx .be.objs/native/be__Base.cmx .be.objs/native/be__Liste.cmx .be.objs/native/be__Arbre.cmx .be.objs/native/be__Conversion.cmx .be.objs/native/be__Natset.cmx)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -w -24 -g -g -I .be.inline-tests/.be.inline-tests.eobjs/byte -I .be.inline-tests/.be.inline-tests.eobjs/native -I /home/argio/.opam/4.11.0/lib/base -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types -I /home/argio/.opam/4.11.0/lib/base/caml -I /home/argio/.opam/4.11.0/lib/base/shadow_stdlib -I /home/argio/.opam/4.11.0/lib/graphics -I /home/argio/.opam/4.11.0/lib/jane-street-headers -I /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/config -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runner/lib -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib -I /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /home/argio/.opam/4.11.0/lib/sexplib0 -I /home/argio/.opam/4.11.0/lib/time_now -I .be.objs/byte -I .be.objs/native -intf-suffix .ml-gen -no-alias-deps -o .be.inline-tests/.be.inline-tests.eobjs/native/dune__exe__Inline_test_runner_be.cmx -c -impl .be.inline-tests/inline_test_runner_be.ml-gen)
+$ (cd _build/default && /home/argio/.opam/4.11.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -w -24 -g -g -o .be.inline-tests/inline_test_runner_be.exe /home/argio/.opam/4.11.0/lib/graphics/graphics.cmxa -I /home/argio/.opam/4.11.0/lib/graphics /home/argio/.opam/4.11.0/lib/ppx_inline_test/config/inline_test_config.cmxa /home/argio/.opam/4.11.0/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/argio/.opam/4.11.0/lib/base/base_internalhash_types /home/argio/.opam/4.11.0/lib/base/caml/caml.cmxa /home/argio/.opam/4.11.0/lib/sexplib0/sexplib0.cmxa /home/argio/.opam/4.11.0/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/argio/.opam/4.11.0/lib/base/base.cmxa -I /home/argio/.opam/4.11.0/lib/base /home/argio/.opam/4.11.0/lib/jane-street-headers/jane_street_headers.cmxa /home/argio/.opam/4.11.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/argio/.opam/4.11.0/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/argio/.opam/4.11.0/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/argio/.opam/4.11.0/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/argio/.opam/4.11.0/lib/time_now/time_now.cmxa -I /home/argio/.opam/4.11.0/lib/time_now /home/argio/.opam/4.11.0/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa be.cmxa /home/argio/.opam/4.11.0/lib/ppx_inline_test/runner/lib/ppx_inline_test_runner_lib.cmxa -I /home/argio/.opam/4.11.0/lib/ppx_inline_test/runner/lib .be.inline-tests/.be.inline-tests.eobjs/native/dune__exe__Inline_test_runner_be.cmx -linkall)
+$ (cd _build/default && .be.inline-tests/inline_test_runner_be.exe inline-test-runner be -source-tree-root . -diff-cmd -)
+> === Tests du module Arbre en Base 2 ===
+> === Tests du module Arbre en Base 5 ===
+> === Tests du module Conversion en Base 2 ===
+> === Tests du module Conversion en Base 5 ===
+> File "arbre.ml", line 188, characters 2-37: <<conforme arbre_0_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 189, characters 2-40: <<conforme arbre_0_14_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 190, characters 2-42: <<conforme arbre_0_7_14_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 191, characters 2-44: <<conforme arbre_0_1_7_14_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 192, characters 2-47: <<conforme arbre_0_1_7_14_36_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 193, characters 2-49: <<conforme arbre_0_1_4_7_14_36_base2>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 194, characters 2-58: <<not (conforme arbre_0_1_4_7_14_36_base2_KO)>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>   Called from Be__Arbre.TestArbre2.(fun) in file "arbre.ml", line 194, characters 19-58
+>
+> File "arbre.ml", line 437, characters 2-37: <<conforme arbre_0_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 438, characters 2-40: <<conforme arbre_0_14_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 439, characters 2-42: <<conforme arbre_0_7_14_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 440, characters 2-44: <<conforme arbre_0_1_7_14_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 441, characters 2-47: <<conforme arbre_0_1_7_14_36_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> File "arbre.ml", line 442, characters 2-49: <<conforme arbre_0_1_4_7_14_36_base5>> threw "Match_failure arbre.ml:12:19".
+>   Raised at Be__Arbre.Arbre.conforme in file "arbre.ml", line 12, characters 19-131
+>   Called from Stdlib__list.map in file "list.ml", line 92, characters 20-23
+>   Called from Be__Arbre.Arbre.conforme in file "arbre.ml", line 13, characters 63-89
+>
+> FAILED 13 / 88 tests
+[2]
