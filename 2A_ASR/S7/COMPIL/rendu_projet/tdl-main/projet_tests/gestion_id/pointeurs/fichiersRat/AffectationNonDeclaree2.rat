@@ -1,0 +1,4 @@
+main {
+    int * ptr = (new int);
+    ptr = &a;
+}

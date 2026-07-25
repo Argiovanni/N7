@@ -1,0 +1,31 @@
+[INFO] - 2024-12-16 20:07:46 : Start download (big.txt)
+[INFO] - 2024-12-16 20:08:16 : Download of (big.txt) (6488666 bytes) completed in 29721 ms with 8 providers 
+[INFO] - 2024-12-16 20:09:18 : Start download (big.txt)
+[INFO] - 2024-12-16 20:09:48 : Download of (big.txt) (6488666 bytes) completed in 30179 ms with 8 providers 
+[INFO] - 2024-12-16 20:10:00 : Start download (big.txt)
+[INFO] - 2024-12-16 20:11:19 : Download of (big.txt) (6488666 bytes) completed in 79451 ms with 8 providers 
+[INFO] - 2024-12-16 20:18:29 : Start download (big.txt)
+[WARN] - 2024-12-16 20:18:31 : Download of chunk of (big.txt) from (2088240) to (2386554) canceled (connexion to [luke.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:18:32 : Retrying (1 times) to download chunk of (big.txt) from (2098480) to (2386554)
+[INFO] - 2024-12-16 20:19:01 : Download of (big.txt) (6488666 bytes) completed in 31525 ms with 8 providers 
+[INFO] - 2024-12-16 20:19:33 : Start download (test_leger.txt)
+[WARN] - 2024-12-16 20:19:33 : Download of chunk of (test_leger.txt) from (0) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:34 : Retrying (1 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:34 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:35 : Retrying (2 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:35 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:36 : Retrying (3 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:36 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:37 : Retrying (4 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:37 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:38 : Retrying (5 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:38 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[INFO] - 2024-12-16 20:19:39 : Retrying (6 times) to download chunk of (test_leger.txt) from (23) to (35)
+[WARN] - 2024-12-16 20:19:39 : Download of chunk of (test_leger.txt) from (23) to (35) canceled (connexion to [bobafett.enseeiht.fr:8081] closed).
+[ERROR] - 2024-12-16 20:19:39 : Download of (test_leger.txt) canceled, no providers to complete the download
+[INFO] - 2024-12-16 20:20:17 : Start download (bee_movie_script.txt)
+[INFO] - 2024-12-16 20:20:18 : Download of (bee_movie_script.txt) (86091 bytes) completed in 536 ms with 7 providers 
+[INFO] - 2024-12-16 20:22:49 : Start download (test_leger.txt)
+[INFO] - 2024-12-16 20:22:49 : Download of (test_leger.txt) (287 bytes) completed in 24 ms with 1 providers 
+[INFO] - 2024-12-16 20:23:33 : Start download (big.txt)
+[INFO] - 2024-12-16 20:23:37 : Download of (big.txt) (6488666 bytes) completed in 3556 ms with 8 providers 

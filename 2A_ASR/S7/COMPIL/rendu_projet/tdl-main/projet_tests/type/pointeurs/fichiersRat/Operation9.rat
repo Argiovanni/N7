@@ -1,0 +1,8 @@
+int * f () {
+   int * p = (new int);
+   return p;
+}
+
+main {
+   int *jpp = f();
+}

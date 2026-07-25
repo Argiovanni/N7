@@ -1,0 +1,7 @@
+main {
+    int a = 4;
+    rat * b = (new rat);
+    (*b) = [2/3];
+    int c = (a * (num (*b)));
+    int d = (a * (denom (*b)));
+}

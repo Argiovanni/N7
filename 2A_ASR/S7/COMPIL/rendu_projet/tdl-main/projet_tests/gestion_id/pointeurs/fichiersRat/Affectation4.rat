@@ -1,0 +1,8 @@
+main {
+    int * p = (new int);
+    if (true) {
+        (*p) = 4;
+    } else {
+        int a = 1;
+    }
+}

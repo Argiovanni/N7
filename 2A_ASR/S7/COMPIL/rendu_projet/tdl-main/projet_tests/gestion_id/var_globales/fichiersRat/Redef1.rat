@@ -1,0 +1,5 @@
+static bool x = true;
+
+main {
+    bool x = false;
+}

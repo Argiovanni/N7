@@ -1,0 +1,9 @@
+int f(int * p){
+    int a = (*p);
+    return a;
+}
+
+main {
+    int * b = (new int);
+    int c = f(b);
+}

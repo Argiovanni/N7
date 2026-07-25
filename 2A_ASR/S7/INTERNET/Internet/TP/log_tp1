@@ -1,0 +1,26 @@
+set up interface
+$ #up interface
+$ ip addr add ...
+	
+creat 3 dummy and set interface
+$ modprobe dummy numdummies=3
+$ ip addr add ...
+	
+$ nano /etc/quagga/daemons 
+	zebra=yes
+	ospfd=yes
+
+restart quagga
+$ systemctl restart quagga
+$ telnet localhost ospfd
+> zebra
+> enable
+> conf t
+# router ospf
+# router-id 'my router ip'
+# network 'network grp' area 'grp'
+# network 'network dummy1' area 'grp'
+[...]
+show ip ospf neighbor 
+
+should be able to ping dummy of other router	

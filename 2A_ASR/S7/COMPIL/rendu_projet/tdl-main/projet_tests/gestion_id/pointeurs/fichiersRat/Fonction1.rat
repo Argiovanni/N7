@@ -1,0 +1,8 @@
+int f (int * ptr) {
+    int * a = (new int);
+}
+
+main {
+    int * ptr = (new int);
+    int a = f(ptr);
+}

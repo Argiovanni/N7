@@ -1,0 +1,5 @@
+#!/bin/sh
+ip a flush dev eth0
+dhclient eth0
+iptables -t nat -A POSTROUTING -j MASQUERADE
+dhcpd -4 -f -d --no-pid -cf /data/dhcpd.conf -lf /data/dhcpd.leases

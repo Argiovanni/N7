@@ -1,0 +1,8 @@
+main {
+    int a = 0;
+    int * ptr = (new int);
+    while (a < 1) {
+        int * ptr = (new int);
+        a = (a + 1);
+    }
+}

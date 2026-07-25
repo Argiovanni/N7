@@ -1,0 +1,65 @@
+services:
+  box_entreprise:
+    build: ./dockerfiles/box_entreprise/
+    container_name: box_1_entreprise
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136. # A modifier par l'autre grp
+      private_ent_1:
+        ipv4_address: 192.168.128.2
+    dns: 120.0.138.4
+    entrypoint: /data/entrypoint
+
+  pc_ent_1:
+    build: ./dockerfiles/pc_ent_1/
+    container_name: pc_ent_1
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      private_ent_1:
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - box_1_entreprise
+
+  pc_ent_2:
+    build: ./dockerfiles/pc_ent_1/
+    container_name: pc_ent_2
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      private_ent_1:
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - box_1_entreprise
+
+  pc_ent_3:
+    build: ./dockerfiles/pc_ent_1/
+    container_name: pc_ent_3
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      private_ent_1:
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - box_1_entreprise
+
+networks:
+  internal_ent:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 120.0.136.0/23 # A modifier par l'autre grp
+  private_ent_1:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 192.168.128.0/17

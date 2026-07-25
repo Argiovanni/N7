@@ -1,0 +1,34 @@
+lancement de minicom
+--------------------
+
+minicom -s
+
+configuration du port série
+---------------------------
+A - Port série /dev/ttyUSB? (à vérifier en regardant ce qui est actif)
+E-  Speed     C 9600 bauds
+    Parity    M Even
+    Data      V 8
+    Stopbits  W 1
+
+    9600 8E1
+F - Contrôle de flux matériel : Non
+
+sortir de la configuration
+--------------------------
+
+vous avez maintenant à votre disposition un mini-terminal
+
+les caractères qui sont tapés au clavier sont transmis à la carte
+via le cable série
+votre uart les réceptionne un à un et les transmet au terminal via le port série
+
+Tout ce que vous tapez doit apparaître dans le terminal
+
+test émission seule : reset sur la carte -> le caractère 'A' dans le
+mini-terminal 
+
+
+Quitter minicom
+Crtl-A Z
+Sortir et ràz  X

@@ -1,0 +1,26 @@
+varGlobal : 
+	passe degestion ID
+
+	passe de typage
+
+	passe de placement memoire
+
+	passe de génération de code
+
+varStaticLocal : 
+	passe degestion ID
+
+	passe de typage
+
+	passe de placement memoire
+
+	passe de génération de code
+
+DefaultParam : 
+	passe degestion ID
+
+	passe de typage
+
+	passe de placement memoire
+
+	passe de génération de code

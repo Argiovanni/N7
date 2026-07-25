@@ -1,0 +1,13 @@
+int f() {
+    static int i = 0;
+    int a = i;
+}
+
+int g() {
+    static int i = 1;
+    int i = 1;
+}
+
+main {
+    int i = 0;
+}

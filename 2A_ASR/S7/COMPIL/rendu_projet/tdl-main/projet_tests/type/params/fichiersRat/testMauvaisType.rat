@@ -1,0 +1,7 @@
+int f (int a = (1 = 22)) {
+    return a;
+}
+
+main {
+    print f();
+}

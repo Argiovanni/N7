@@ -1,0 +1,2 @@
+#!/bin/sh
+dhcpd -4 -f -d --no-pid -cf /data/dhcpd.conf -lf /data/dhcpd.leases

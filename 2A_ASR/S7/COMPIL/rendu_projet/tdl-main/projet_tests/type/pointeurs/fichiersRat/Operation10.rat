@@ -1,0 +1,5 @@
+main {
+    rat * r = (new rat);
+    (* r) = [3/2];
+    print( (*r));
+}

@@ -1,0 +1,8 @@
+int f () {
+    static int b = true;
+    return b;
+}
+
+main {
+    int a = f();
+}

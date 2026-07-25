@@ -1,0 +1,5 @@
+main {
+    int * i = (new int);
+    int * j = (new int);
+    bool b = (j = i);
+}

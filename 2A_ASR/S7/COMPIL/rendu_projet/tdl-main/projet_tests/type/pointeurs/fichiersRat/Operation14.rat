@@ -1,0 +1,8 @@
+int f(int * p){
+    return 1;
+}
+
+main {
+    bool b = true;
+    int c = f(&b);
+}

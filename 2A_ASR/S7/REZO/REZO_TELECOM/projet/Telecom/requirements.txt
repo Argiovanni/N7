@@ -1,0 +1,3 @@
+#### bibliotheques necessaires pour lancer les codes du projet #### 
+matplotlib 
+networkx

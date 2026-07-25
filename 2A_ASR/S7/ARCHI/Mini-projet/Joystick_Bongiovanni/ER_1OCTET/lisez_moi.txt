@@ -1,0 +1,22 @@
+Dans ce répertoire, il faut compléter le fichier "er_1octet.vhd" en développant son architecture [NE JAMAIS TOUCHER AUX INTERFACES FOURNIES].
+
+Un test simple est fourni avec des assertions, permettant de valider plus facilement.
+
+Vous avez aussi les fichiers nécessaires pour simuler un composant avec le script n7xilinxhelper et visualiser les valeurs des signaux (fichier output.vcd,
+visualisation avec gtkwave sous linux).
+
+Un test avec un automate à états est aussi fourni et peut vous donner des idées pour la seconde partie du projet.
+
+Remarque importante :
+
+ce n'est pas parce que votre composant ne passe pas les tests qu'il est obligatoirement faux : il peut y avoir des décalages en fonction de comment a été construit le test, construction liée à la solution imaginée.
+
+Comme il n'y a pas de spécification formelle du composant, il ne peut pas y avoir de solution unique et donc pas de test unique.
+
+Si jamais vous avez des messages comme quoi des signaux sont faux, à vous de déterminer la gravité en regardant plus attentivement
+les chronogrammes :
+- soit il y a vraiment des problèmes (valeurs significatives ('0', '1') des signaux vraiment différents et pas juste décalés, ...) 
+  et il faut trouver et corriger les erreurs
+- soit vous constatez des décalages ou des valeurs non significatives ('U') 
+   + soit vous adaptez votre code pour coller avec le test, 
+   + soit vous laissez comme cela en m'informant de la situation dans un fichier à part

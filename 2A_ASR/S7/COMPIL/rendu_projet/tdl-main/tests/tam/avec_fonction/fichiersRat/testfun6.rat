@@ -1,0 +1,38 @@
+bool and (bool b1, bool b2){
+  if b1 {
+    if b2 { return true; }
+    else { return false; }
+  } else {
+    return false;
+  }
+}
+
+bool or (bool b1, bool b2){
+  if b1 {
+    return true;
+  } else {
+    if b2 { return true; }
+    else { return false; }
+  }
+}
+
+bool not (bool b) {
+  if b { return false; } else { return true; }
+}
+
+bool implies (bool p, bool q) {
+  return (or (not(p), q));
+}
+
+bool veriftranspose(bool a, bool b){
+  return ((implies(a, b)) = (implies(not(b), not(a))));
+}
+
+test{
+  bool a = true;
+  bool b = true;
+  print veriftranspose(a, b);
+  a = true;
+  b = false;
+  print veriftranspose(a, b);
+}

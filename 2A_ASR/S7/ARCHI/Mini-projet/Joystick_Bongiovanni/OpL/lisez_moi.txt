@@ -1,0 +1,8 @@
+fichiers de ce répertoire:
+
+- SlaveOpL.vhd à ne pas modifier
+- MasterOpl.vhd à compléter [NE PAS MODIFIER L'INTERFACE]
+- TestOpl.vhd à écrire
+- n7.makefile à NE PAS MODIFIER a priori sauf si vous voulez allonger la durée   de la simulation
+
+Ne surtout pas modifier le nom des fichiers ni celui des composants (respect minuscules/majuscules dans le nom des fichiers)

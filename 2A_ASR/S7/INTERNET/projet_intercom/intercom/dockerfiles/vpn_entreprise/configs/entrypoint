@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd etc/openvpn/server/
+
+iptables -t nat -A POSTROUTING -s 10.8.0.128/25 -o eth0 -j MASQUERADE
+
+openvpn server.conf
+
+tail -f /dev/null

@@ -1,0 +1,8 @@
+main {
+    int * ptr = (new int);
+    if (false){
+        int a = 1;
+    } else {
+        (* ptr) = 6;
+    }
+}

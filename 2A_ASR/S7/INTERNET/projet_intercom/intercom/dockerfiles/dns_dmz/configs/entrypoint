@@ -1,0 +1,5 @@
+#!bin/sh
+ip route del default
+ip route add default via 120.0.138.2
+
+/usr/sbin/named -g -c /etc/bind/named.conf -u named

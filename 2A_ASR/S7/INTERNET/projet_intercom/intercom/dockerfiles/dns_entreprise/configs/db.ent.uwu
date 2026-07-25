@@ -1,0 +1,17 @@
+$TTL    604800
+@       IN      SOA      ns2.ent.uwu.          root.ent.uwu. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800         ; default TTL
+                    )
+;
+
+@              IN       NS      ns2.ent.uwu.
+ns2            IN       A       120.0.136.4
+supersite      IN       A       120.0.136.3
+minecraft      IN       A       120.0.136.6
+mumble         IN       A       120.0.136.7
+
+

@@ -1,0 +1,14 @@
+int f (int a , int b=2, int c = 3, int d = (2+2)){
+    print a;
+    print b;
+    print c;
+    print d;
+    return a;
+}
+
+main {
+    int f1 = f(10,20,30,40);
+    int f2 = f(10,20,30);
+    int f3 = f(10,20);
+    int f4 = f(10);
+}

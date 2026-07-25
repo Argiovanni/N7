@@ -1,0 +1,344 @@
+services:
+  ### DMZ ###
+  r_dmz:
+    build: ./dockerfiles/r_dmz/
+    container_name: r_dmz
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      core:
+        ipv4_address: 120.0.141.6
+      dmz:
+        ipv4_address: 120.0.138.2
+    dns: 120.0.138.4
+
+  web_dmz:
+    build: ./dockerfiles/web_dmz/
+    container_name: web_dmz
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      dmz:
+        ipv4_address: 120.0.138.3
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - r_dmz
+
+  ### Partie Entreprise ###
+  r_entreprise:
+    build: ./dockerfiles/r_entreprise/
+    container_name: r_entreprise
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      core:
+        ipv4_address: 120.0.141.4
+      internal_ent:
+        ipv4_address: 120.0.136.2
+
+  box_1_entreprise:
+    build: ./dockerfiles/box_entreprise/
+    container_name: box_1_entreprise
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136.4
+      private_ent_1:
+        ipv4_address: 192.168.128.2
+    dns: 120.0.138.4
+    entrypoint: /data/entrypoint
+
+  pc_ent_1:
+    build: ./dockerfiles/pc_ent_1/
+    container_name: pc_ent_1
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      private_ent_1:
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - box_1_entreprise
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ~/.Xauthority:/home/user/.Xauthority:ro
+    environment:
+      - DISPLAY
+
+  web_entreprise:
+    build: ./dockerfiles/web_entreprise/
+    container_name: web_entreprise
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136.3
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - r_entreprise
+
+  dns_entreprise:
+    build: ./dockerfiles/dns_entreprise
+    container_name: dns_entreprise
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    entrypoint: /data/entrypoint
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136.5
+    dns: 120.0.136.5
+    dns_search:
+      - ent.uwu
+    depends_on:
+      - r_entreprise
+
+  minecraft_srv:
+    build: ./dockerfiles/minecraft_srv
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136.6
+    dns: 120.0.138.4
+    depends_on:
+      - r_entreprise
+
+  mumble_entreprise:
+    build: ./dockerfiles/mumble_entreprise/
+    container_name: mumble_entreprise
+    hostname: mumble_entreprise
+    environment:
+      - MUMBLE_CONFIG_SERVER_PASSWORD=123
+      - MUMBLE_SUPERUSER_PASSWORD=admin
+      - MUMBLE_VERBOSE=1
+      - MUMBLE_CONFIG_BANDWIDTH=72000
+      - MUMBLE_CONFIG_PORT=64738
+      - MUMBLE_CONFIG_WELCOMETEXT="Je suis un serveur mumble QUI FONCTIONNE (ENTREPRISE)"
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    restart: on-failure
+    ports:
+        - 64738:64738
+        - 64738:64738/udp
+    networks:
+      internal_ent:
+        ipv4_address: 120.0.136.7
+    dns: 120.0.138.4
+    depends_on:
+      - r_entreprise
+
+  ### Partie DMZ ###
+
+  dns_dmz:
+    build: ./dockerfiles/dns_dmz
+    container_name: dns_dmz
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    entrypoint: /data/entrypoint
+    networks:
+      dmz:
+        ipv4_address: 120.0.138.4
+    dns: 120.0.138.4
+    dns_search:
+      - uwu
+    depends_on:
+      - r_dmz
+
+  mumble_dmz:
+    build: ./dockerfiles/mumble_dmz/
+    container_name: mumble_dmz
+    hostname: mumble_dmz
+    environment:
+      - MUMBLE_CONFIG_SERVER_PASSWORD=123
+      - MUMBLE_SUPERUSER_PASSWORD=admin
+      - MUMBLE_VERBOSE=1
+      - MUMBLE_CONFIG_BANDWIDTH=72000
+      - MUMBLE_CONFIG_PORT=64738
+      - MUMBLE_CONFIG_WELCOMETEXT="Je suis un serveur mumble QUI FONCTIONNE"
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    restart: on-failure
+    ports:
+        - 64738:64738
+        - 64738:64738/udp
+    networks:
+      dmz:
+        ipv4_address: 120.0.138.5
+    dns: 120.0.138.4
+    depends_on:
+      - r_dmz
+  
+  # Base de données utilisé par le serveur teamspeak. Possiblement supprimable si on veut rien persister. (Si j'ai bien compris la doc)
+  teamspeak_db:
+    build:  ./dockerfiles/db_dmz/
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: teamspeak
+    entrypoint: /data/entrypoint
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      dmz:
+        ipv4_address: 120.0.138.6
+    dns: 120.0.138.4
+    depends_on:
+      - r_dmz
+
+  ### Partie Personal ###
+  r_boxs:
+    build: ./dockerfiles/r_boxs/
+    container_name: r_boxs
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      core:
+        ipv4_address: 120.0.141.5
+      internal_boxs:
+        ipv4_address: 120.0.128.2
+    dns: 120.0.138.4
+
+  dhcp_boxs_srv:
+    build: ./dockerfiles/dhcp_srv/
+    container_name: dhcp_boxs_srv
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      internal_boxs:
+        ipv4_address: 120.0.128.3
+    dns: 120.0.138.4
+    entrypoint: /data/entrypoint
+
+  box_1:
+    build: ./dockerfiles/box/
+    container_name: box_1
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      internal_boxs:
+      private_1:
+        ipv4_address: 192.168.0.2
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - dhcp_boxs_srv
+
+  pc_1:
+    build: ./dockerfiles/pc/
+    container_name: pc_1
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      private_1:
+    entrypoint: /data/entrypoint
+    dns: 120.0.138.4
+    depends_on:
+      - box_1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ~/.Xauthority:/home/user/.Xauthority:ro
+    environment:
+    - DISPLAY
+
+  vpn_ent:
+    build: ./dockerfiles/vpn_entreprise/
+    container_name: vpn_ent
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - MKNOD
+      - NET_ADMIN
+    networks:
+      private_ent_1:
+        ipv4_address: 192.168.128.3
+    ports:
+      - 943:943
+      - 443:443
+      - 1194:1194/udp
+    entrypoint: /data/entrypoint
+    privileged: true
+
+
+  r_internet:
+    build: ./dockerfiles/r_internet
+    container_name: r_internet
+    cap_add:
+      - NET_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      core:
+        ipv4_address: 120.0.141.2
+      internet:
+        ipv4_address: 10.0.1.3
+
+# partie réseaux #
+networks:
+  core:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 120.0.141.0/24
+  internal_boxs:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 120.0.128.0/21
+  private_1:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 192.168.0.0/17
+
+  internal_ent:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 120.0.136.0/23
+
+  private_ent_1:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 192.168.128.0/17
+  dmz:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 120.0.138.0/23
+  vpn:
+    driver: macvlan
+    ipam:
+      config:
+        - subnet: 10.8.0.128/25
+  internet:
+    driver: macvlan
+    # A commenter si pas interco
+    # driver_opts:
+    #   parent: enp4s0f3u1u4
+    ipam:
+      config:
+        - subnet: 10.0.1.0/29

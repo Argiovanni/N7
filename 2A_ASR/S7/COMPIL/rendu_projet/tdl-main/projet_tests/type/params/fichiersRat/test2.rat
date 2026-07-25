@@ -1,0 +1,7 @@
+int f (bool b = true, int a = 1, rat r = [3/2]){
+    return a;
+}
+
+main {
+    print f();
+}

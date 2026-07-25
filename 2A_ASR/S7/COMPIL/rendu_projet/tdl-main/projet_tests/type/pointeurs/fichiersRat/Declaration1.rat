@@ -1,0 +1,17 @@
+main {
+    int * x = null;
+    bool * y = null;
+    rat * z = null;
+    int * a = (new int);
+    bool * b = (new bool);
+    rat * c = (new rat);
+    int * * les_test_c_longs = (new int *);
+    bool * * les_test_c_redondant = (new bool *);
+    rat * * et_c_chiant = (new rat *);
+    int e = 1;
+    bool f = true;
+    rat g = [2/3];
+    int * pe = &e;
+    bool * pf = &f;
+    rat * pg = &g;
+}

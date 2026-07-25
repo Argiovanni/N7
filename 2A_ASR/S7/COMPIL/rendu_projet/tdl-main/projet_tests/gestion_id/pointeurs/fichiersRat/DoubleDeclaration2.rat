@@ -1,0 +1,9 @@
+main {
+    bool a = true;
+    int * ptr = (new int);
+    if (a) {
+        int * ptr = (new int);
+    } else {
+        int b = 1;
+    }
+}

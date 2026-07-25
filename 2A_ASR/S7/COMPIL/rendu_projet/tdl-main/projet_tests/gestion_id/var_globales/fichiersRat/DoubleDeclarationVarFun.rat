@@ -1,0 +1,9 @@
+static int x = 0;
+
+int x () {
+    return x;
+}
+
+main {
+    print(x);
+}

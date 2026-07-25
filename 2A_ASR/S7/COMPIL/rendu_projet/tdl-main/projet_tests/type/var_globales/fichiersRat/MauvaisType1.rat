@@ -1,0 +1,5 @@
+static bool b = [2/3];
+
+main {
+    print(b);
+}

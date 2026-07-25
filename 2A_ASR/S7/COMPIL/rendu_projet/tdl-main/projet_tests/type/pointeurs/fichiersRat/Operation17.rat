@@ -1,0 +1,7 @@
+main {
+    int a = 2;
+    int b = 3;
+    int * x = (new int);
+    a = (a * (* x));
+    b = ((* x) * b);
+}

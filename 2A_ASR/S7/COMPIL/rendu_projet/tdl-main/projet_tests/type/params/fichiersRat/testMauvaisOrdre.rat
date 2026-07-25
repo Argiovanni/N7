@@ -1,0 +1,7 @@
+int f(int a = 2, int b) {
+    return a;
+}
+
+main {
+    int a = f(1);
+}

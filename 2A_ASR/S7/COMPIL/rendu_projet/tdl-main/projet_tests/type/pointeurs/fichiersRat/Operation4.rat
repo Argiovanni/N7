@@ -1,0 +1,5 @@
+main {
+    int * a = (new int);
+    bool b = (2 < (*a));
+    b = ((*a) < 2);
+}

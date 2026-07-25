@@ -1,0 +1,10 @@
+main {
+    int * x = (new int);
+    (*x) = 4;
+    int z = 18;
+    int * y = (&z);
+    (*y) = (*x);
+    print((*x));
+    print((*y));
+    print(z);
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+ip a a dev eth0 120.0.136.4/23 # A modifier par l'autre groupe
+ip route del default
+ip route add default via 120.0.136.2
+iptables -t nat -A POSTROUTING -j MASQUERADE
+dhcpd -4 -f -d --no-pid -cf /data/dhcpd.conf -lf /data/dhcpd.leases

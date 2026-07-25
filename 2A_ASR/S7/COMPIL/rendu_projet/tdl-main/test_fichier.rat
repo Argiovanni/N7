@@ -1,0 +1,106 @@
+JUMP main
+
+pgcd
+LOADL 0
+LOAD (1) -2[LB]
+LOAD (1) -1[LB]
+boucle
+LOAD (1) 5[LB]
+JUMPIF (0) fin
+LOAD (1) 4[LB]
+LOAD (1) 5 [LB]
+SUBR IMod
+STORE (1) 3[LB]
+LOAD (1) 5[LB]
+STORE (1) 4[LB]
+LOAD (1) 3[LB]
+STORE(1) 5[LB]
+JUMP boucle
+fin
+LOAD (1) 4[LB]
+RETURN (1) 2
+
+norm
+LOAD (1) -2[LB]
+LOAD (1) -1[LB]
+CALL (LB) pgcd
+LOAD (1) -2[LB]
+LOAD (1) 3[LB]
+SUBR IDiv
+LOAD (1) -1[LB]
+LOAD (1) 3[LB]
+SUBR IDiv
+RETURN (2) 2
+
+ROut
+LOADL '['
+SUBR COut
+LOAD (1) -2[LB]
+SUBR IOut
+LOADL '/'
+SUBR COut
+LOAD (1) -1[LB]
+SUBR IOut
+LOADL ']'
+SUBR COut
+RETURN (0) 2
+
+RAdd
+LOAD (1) -4[LB]
+LOAD (1) -1[LB]
+SUBR IMul
+LOAD (1) -2[LB]
+LOAD (1) -3[LB]
+SUBR IMul
+SUBR IAdd
+LOAD (1) -3[LB]
+LOAD (1) -1[LB]
+SUBR IMul
+CALL (ST) norm
+RETURN (2) 4
+
+RMul
+LOAD (1) -4[LB]
+LOAD (1) -2[LB]
+SUBR IMul
+LOAD (1) -3[LB]
+LOAD (1) -1[LB]
+SUBR IMul
+CALL (ST) norm
+RETURN (2) 4
+
+main 
+PUSH 3
+LOADL 6
+LOADL 5
+CALL (LB) norm
+STORE (2) 0[SB]
+LOADL 5
+LOADL 1
+SUBR IAdd
+STORE (1) 2[SB]
+LOAD (2) 0[SB]
+LOADL 3
+LOADL 2
+CALL (LB) norm
+CALL (LB) RAdd
+STORE (2) 0[SB]
+label9
+LOAD (1) 2[SB]
+LOADL 10
+SUBR ILss
+JUMPIF (0) label10
+LOADL 5
+LOAD (1) 2[SB]
+CALL (LB) norm
+LOAD (2) 0[SB]
+CALL (LB) RMul
+CALL (SB) ROut
+LOAD (1) 2[SB]
+LOADL 1
+SUBR IAdd
+STORE (1) 2[SB]
+JUMP label9
+label10
+POP (0) 3
+HALT

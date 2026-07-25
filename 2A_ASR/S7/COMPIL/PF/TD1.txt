@@ -1,0 +1,79 @@
+			TD1 PF
+		PART 1 Liste
+	EX1
+1/  
+(* contrat fonction deuxieme 
+*  description : fonction qui retourne le 2nd elem d'une liste
+*  param : la liste('a list) qui contient au moins 2 elem
+*  resultat : un elem de type 'a, le deuxieme de la liste
+*  profil : 'a list -> 'a
+*)
+let deuxieme l = match l with
+	| _::d::_ -> d
+	| _ -> failwith "not enough elem in list"
+;;
+
+let deuxiemeV2 l = if l <> [] then if (List.tl l) <> [] then (List.hd (List.tl l)) else failwith "only 1elem" else failwith "empty list"
+
+let dauxieme V3 l = if (List.length l) >= 2 then (List.hd (List.tl l)) else failwith "not enough elem" ;;
+
+2/ 
+(*  contrat fonction n_a_zero
+*   description : renvoi la liste [n;n-1;...;0]
+*   param : n un entier positif
+*   resultat : une liste d'entier int list bien formée
+*   profil : int -> int list
+*)
+let rec n_a_zero n = if n<0 then []
+		 else n:: (n_a_zero (n-1)) 
+;;
+
+(*  contrat fonction zero_a_n
+*   description : renvoi la liste [0;1;...;n]
+*   param : n un entier positif
+*   resultat : une liste d'entier int list bien formée
+*   profil : int -> int list
+*)
+let n_a_zero n = 
+	let rec aux_zan p liste = 
+		if p>n then liste
+		else aux_zan (p+1) p::liste
+	in aux_zan 0 []
+;;
+
+
+3/
+(*  contrat fonction index
+*   description : renvoi la liste des position d'un elem dans une liste
+*   param : a, un elem et l une liste d'elem du type de a
+*   resultat : une liste d'entier qui correspond aux position de a dans la liste
+*   profil : 'a -> 'a list -> int list 
+*)
+let index a l =
+	let rec position l ind = 
+		match l with
+		| [] -> []
+		|(t::r) -> if t==a then ind::(position r (ind+1))
+			   else (position r (ind+1))
+	in position l 0
+;;
+	EX2
+1/
+(* marche très bien mais pas la consigne... *)
+let rec map f l = match l with
+	| [] -> []
+	| h::t -> (f h)::(map f t)
+;;
+let map f l = fold_right( fun t r -> (f t)::r) l [] ;;
+2/
+let flatten ll = fold_right ( fun t r -> t@r) ll [] ;;
+3/
+let fsts = map (List.fst) ;;
+4/
+let split l = fold_right (fun (e1,e2)(r1,r2) -> (e1::r1, e2::r2)) l ([],[]) ;;
+5/
+let suppr_dbl l = fold_right (fun t r -> if (List.meme t r) then r else t::r) f [] ;;
+
+		PART2 Modules,application aux files
+	EX3
+

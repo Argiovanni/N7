@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="MasterOpL2024.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3993"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3990"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lstart-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3990-1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3993-2"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.338628"
+     inkscape:cx="368.28753"
+     inkscape:cy="293.95769"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:guide-bbox="true"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-opacity:1"
+       id="path3776"
+       sodipodi:cx="275"
+       sodipodi:cy="467.36218"
+       sodipodi:rx="5"
+       sodipodi:ry="5"
+       d="m 280,467.36218 a 5,5 0 1 1 -10,0 5,5 0 1 1 10,0 z"
+       transform="translate(85,-60)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 260,402.36218 10,-10 10,10"
+       id="path3778"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 270,402.36218 0,70"
+       id="path3780"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 360,412.36218 0,60"
+       id="path3782"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 220,152.36218 -65,0"
+       id="path3784"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 221.15922,383.08171 -65,0"
+       id="path3784-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 221.49221,284.75716 -65,0"
+       id="path3784-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 525,147.36218 -65,0"
+       id="path3784-15"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 525,207.36218 -65,0"
+       id="path3784-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 525,267.36218 -65,0"
+       id="path3784-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="130"
+       y="152.36218"
+       id="text4858"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4860"
+         x="130"
+         y="152.36218"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">en</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 221.2168,190.06136 -65,0"
+       id="path3784-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 190,177.36218 -10,25"
+       id="path4862"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 189.0573,273.52141 -10,25"
+       id="path4862-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="130"
+       y="194.32018"
+       id="text4882"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4884"
+         x="130"
+         y="194.32018"
+         style="font-size:14px;line-height:1.25">v1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="89.134193"
+       y="288.63412"
+       id="text4886"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4888"
+         x="89.134193"
+         y="288.63412"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif">val_xor</tspan></text>
+    <g
+       id="g4216"
+       transform="translate(8.1145929,15.069958)"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/guivarch/MesDocuments/Enseignements/13-14/VHDL/Joystick/sujet/images/MasterEcho.png"
+         id="text4890"
+         y="372.1879"
+         x="108.15391"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="372.1879"
+           x="108.15391"
+           id="tspan4892"
+           sodipodi:role="line"
+           style="font-size:14px;line-height:1.25;font-family:sans-serif">busy</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="231.56459"
+       y="443.32681"
+       id="text4894"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4896"
+         x="231.56459"
+         y="443.32681"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">clk</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="370"
+       y="442.36218"
+       id="text4898"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4900"
+         x="370"
+         y="442.36218"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">reset</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="538.23438"
+       y="149.87505"
+       id="text4902"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4904"
+         x="538.23438"
+         y="149.87505"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">sclk</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="537.72168"
+       y="206.84404"
+       id="text4906"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4908"
+         x="537.72168"
+         y="206.84404"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">mosi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="537.72168"
+       y="267.36218"
+       id="text4910"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4912"
+         x="537.72168"
+         y="267.36218"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">miso</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.16083109;stroke-opacity:1"
+       id="rect2987"
+       width="238.77658"
+       height="279.34033"
+       x="221.2234"
+       y="123.02184"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="299.37048"
+       y="267.91125"
+       id="text6936"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6938"
+         x="299.37048"
+         y="267.91125"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif">MasterOpL</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 525,327.36218 -65,0"
+       id="path3784-8-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="539.36108"
+       y="328.56915"
+       id="text3047"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3049"
+         x="539.36108"
+         y="328.56915"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">ss</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 540,317.36218 c 15,0 15,0 15,0"
+       id="path3051"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 220.6084,227.36218 -65,0"
+       id="path3784-0-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 188.7832,216.4882 -10,25"
+       id="path4862-53"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="130"
+       y="227.36218"
+       id="text4882-3"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4884-7"
+         x="130"
+         y="227.36218"
+         style="font-size:14px;line-height:1.25;font-family:sans-serif">v2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 221.08836,315.77204 -65,0"
+       id="path3784-2-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 186.92877,303.77464 -10,25"
+       id="path4862-5-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="86.346222"
+       y="319.93387"
+       id="text4886-3"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4888-5"
+         x="86.346222"
+         y="319.93387"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif">val_and</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 221.47987,348.18925 -65,0"
+       id="path3784-2-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 184.98005,335.49007 -10,25"
+       id="path4862-5-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g4273"
+       transform="translate(114.18391,-70.133267)"
+       inkscape:export-filename="/home/guivarch/Documents/Enseignements/Cours/VHDL/Commun/Joystick/sujetASR2024/images/MasterOpL2024.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <g
+         transform="translate(6.3757516,-0.57961378)"
+         id="g4269">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           x="-25.356438"
+           y="424.10101"
+           id="text4886-2"
+           inkscape:export-filename="/home/guivarch/MesDocuments/Enseignements/13-14/VHDL/Joystick/sujet/images/MasterEcho.png"
+           inkscape:export-xdpi="200"
+           inkscape:export-ydpi="200"><tspan
+             sodipodi:role="line"
+             id="tspan4888-7"
+             x="-25.356438"
+             y="424.10101"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif">val_or</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

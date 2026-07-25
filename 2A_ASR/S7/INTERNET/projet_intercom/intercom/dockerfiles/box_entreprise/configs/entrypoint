@@ -1,0 +1,11 @@
+#!/bin/sh
+ip a a dev eth0 120.0.136.4/23
+ip route del default
+ip route add default via 120.0.136.2
+iptables -t nat -A POSTROUTING -j MASQUERADE
+
+iptables -t nat -A PREROUTING -p udp --dport 1194 -j DNAT --to-destination 192.168.128.3:1194
+iptables -t nat -A POSTROUTING -p udp -d 192.168.128.3 --dport 1194 -j SNAT --to-source 192.168.128.2
+
+dhcpd -4 -f -d --no-pid -cf /data/dhcpd.conf -lf /data/dhcpd.leases
+

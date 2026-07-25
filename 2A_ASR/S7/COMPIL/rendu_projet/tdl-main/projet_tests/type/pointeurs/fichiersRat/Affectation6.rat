@@ -1,0 +1,6 @@
+main {
+    bool * x = (new bool);
+    bool a = true;
+    x = &a;
+    a = (*x);
+}

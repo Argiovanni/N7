@@ -1,0 +1,9 @@
+static rat r = [1/2];
+
+bool f () {
+    rat r = [2/3];
+}
+
+main {
+    print(r);
+}

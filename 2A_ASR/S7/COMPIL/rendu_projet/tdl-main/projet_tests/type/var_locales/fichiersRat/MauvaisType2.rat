@@ -1,0 +1,8 @@
+bool f () {
+    static int a = 1;
+    return a;
+}
+
+main {
+    print f();
+}

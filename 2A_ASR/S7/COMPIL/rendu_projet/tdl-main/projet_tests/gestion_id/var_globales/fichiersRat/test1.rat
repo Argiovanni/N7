@@ -1,0 +1,9 @@
+static int x = 1;
+
+int f () {
+    x = (x + 1);
+}
+
+main {
+    print(x);
+}

@@ -1,0 +1,5 @@
+main {
+    bool * b = (new bool);
+    bool * c = (new bool);
+    bool * d = (b+c);
+}

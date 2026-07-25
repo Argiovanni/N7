@@ -1,0 +1,8 @@
+main {
+    bool * x = (new bool);
+    if (*x) {
+        int a = 3;
+    } else {
+        int b = 3;
+    }
+}

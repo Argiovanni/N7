@@ -1,0 +1,2 @@
+service applicatif -> zone pubic rezo_entreprise ( serveur minecraft ? sanik (hedgdocs) ?)
+secondaire entreprise (2 client + dhcp /!\ pas sur notre docker compose -> juste sur un docker file et on le file à un autre grp)

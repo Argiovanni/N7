@@ -1,0 +1,6 @@
+main {
+    int * ptr = (new int);
+    while (true) {
+        (*ptr) = 5;
+    }
+}

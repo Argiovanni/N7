@@ -1,0 +1,7 @@
+main {
+    int * px = (new int);
+    int x = 423;
+    px = (&x);
+    int y = (*px);
+    print(y);
+}
