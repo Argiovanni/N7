@@ -1,0 +1,41 @@
+// root workspace : .../mariokart-25/
+gradle.ext.root_dir = "${rootDir}/../"
+
+include ':app'
+include ':aRBaseLib'
+project(':aRBaseLib').projectDir = new File('aRBaseLib/')
+
+include ':arsdk'
+project(':arsdk').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk')
+
+include 'libARSAL'
+project(':libARSAL').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARSAL')
+include 'libmux'
+project(':libmux').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libmux/android')
+include 'libARNetworkAL'
+project(':libARNetworkAL').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARNetworkAL')
+include 'libARNetwork'
+project(':libARNetwork').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARNetwork')
+include 'libARCommands'
+project(':libARCommands').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARCommands')
+include 'libARStream'
+project(':libARStream').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream')
+include 'libARStream2'
+project(':libARStream2').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream2')
+include 'libARDiscovery'
+project(':libARDiscovery').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery')
+include 'libARUtils'
+project(':libARUtils').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARUtils')
+include 'libARDataTransfer'
+project(':libARDataTransfer').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDataTransfer')
+include 'libARMedia'
+project(':libARMedia').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARMedia')
+include 'libARUpdater'
+project(':libARUpdater').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARUpdater')
+include 'libARMavlink'
+project(':libARMavlink').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARMavlink')
+include 'libARController'
+project(':libARController').projectDir = new File('../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARController')
+
+
+

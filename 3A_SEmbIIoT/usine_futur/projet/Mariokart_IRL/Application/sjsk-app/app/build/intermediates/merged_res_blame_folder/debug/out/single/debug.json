@@ -1,0 +1,946 @@
+[
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00003.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00003.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_row_circuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/row_circuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00009.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00009.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00071.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00071.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00089.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00089.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00044.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00044.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00064.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00064.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_wifi_connection_item.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/wifi_connection_item.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00036.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00036.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00011.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00011.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00056.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00056.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_blooper_animation.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/blooper_animation.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00028.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00028.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00048.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00048.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_greenshell.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/greenshell.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00049.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00049.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00045.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00045.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00004.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00004.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00051.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00051.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00000.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00000.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_pngwing_com.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/pngwing_com.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00035.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00035.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00029.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00029.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_title_gradient.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/title_gradient.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00039.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00039.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00060.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00060.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00010.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00010.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00055.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00055.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00054.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00054.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00019.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00019.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00001.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00001.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_gui_circuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_gui_circuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00065.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00065.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_giantmushroom.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/giantmushroom.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_guicreatecircuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_guicreatecircuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00042.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00042.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00062.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00062.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00034.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00034.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_goldmushroom.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/goldmushroom.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00062.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00062.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00008.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00008.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_triplemushroom.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/triplemushroom.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00088.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00088.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00021.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00021.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00006.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00006.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00057.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00057.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00072.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00072.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00037.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00037.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00052.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00052.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00001.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00001.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00047.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00047.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_null_object.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/null_object.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00027.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00027.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00067.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00067.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00025.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00025.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00060.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00060.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00078.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00078.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00005.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00005.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00037.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00037.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00017.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00017.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00052.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00052.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_tripleredshell.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/tripleredshell.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_pow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/pow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00040.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00040.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00059.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00059.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00047.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00047.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00039.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00039.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_alpha_frame_50x50.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/alpha_frame_50x50.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00026.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00026.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_right_arrow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/right_arrow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00032.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00032.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_magic_box_animation.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/magic_box_animation.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_left_arrow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/left_arrow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00000.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00000.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00045.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00045.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00058.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00058.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00013.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00013.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_flash.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/flash.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_jsbg2.jpg.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/jsbg2.jpg"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00061.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00061.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_alpha_frame_640x480.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/alpha_frame_640x480.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00074.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00074.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00086.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00086.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00041.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00041.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00054.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00054.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00012.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00012.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00038.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00038.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_squid.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/squid.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00073.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00073.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00005.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00005.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00020.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00020.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00053.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00053.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00004.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00004.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00046.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00046.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_guicircuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_guicircuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00087.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00087.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00079.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00079.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00061.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00061.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00081.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00081.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00040.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00040.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00053.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00053.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00066.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00066.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00018.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00018.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_gui_welcome.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_gui_welcome.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00005.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00005.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00025.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00025.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00038.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00038.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00012.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00012.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_top_arrow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/top_arrow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_guimodify_circuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_guimodify_circuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_row_marker.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/row_marker.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00033.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00033.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00020.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00020.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00046.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00046.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00059.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00059.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00082.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00082.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00041.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00041.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00006.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00006.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00033.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00033.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00078.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00078.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_jump_arrow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/jump_arrow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00018.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00018.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00021.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00021.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00066.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00066.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00090.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00090.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_header_markers.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/header_markers.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00010.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00010.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00074.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00074.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00002.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00002.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_magicbox.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/magicbox.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00007.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00007.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00017.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00017.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00058.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00058.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00013.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00013.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00083.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00083.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00032.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00032.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00026.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00026.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00003.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00003.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00067.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00067.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00073.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00073.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00022.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00022.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00042.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00042.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00080.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00080.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00016.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00016.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00000.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00000.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00024.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00024.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00004.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00004.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00031.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00031.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00057.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00057.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00072.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00072.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00077.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00077.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_cloud.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/cloud.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00027.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00027.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00051.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00051.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00068.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00068.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_bottom_arrow.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/bottom_arrow.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00011.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00011.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00075.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00075.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00034.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00034.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_redbox.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/redbox.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_steeringwheelmario_removebg_preview.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/steeringwheelmario_removebg_preview.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00019.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00019.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00024.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00024.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00031.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00031.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00044.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00044.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00065.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00065.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00014.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00014.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00009.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00009.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00022.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00022.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00063.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00063.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00029.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00029.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00010.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00010.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_redshell.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/redshell.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00071.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00071.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_red_shell_animation.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/red_shell_animation.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00002.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00002.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_header_circuit.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/header_circuit.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00014.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00014.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00085.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00085.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00055.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00055.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00075.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00075.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00030.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00030.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_star.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/star.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00068.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00068.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00036.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00036.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00006.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00006.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_jsbg.jpg.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/jsbg.jpg"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00009.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00009.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00070.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00070.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00077.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00077.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_mushroom.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/mushroom.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_triplegreenshell.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/triplegreenshell.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00064.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00064.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00048.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00048.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00016.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00016.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00003.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00003.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00007.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00007.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00092.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00092.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_wifi_connections_list.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/wifi_connections_list.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00023.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00023.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/raw_rbgatonv21.bc.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-rs-8:/raw/rbgatonv21.bc"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00076.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00076.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00007.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00007.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00050.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00050.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00069.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00069.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00023.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00023.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00091.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00091.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00084.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00084.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_blueshell.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/blueshell.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_bomb.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/bomb.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00049.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00049.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00015.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00015.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00070.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00070.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00043.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00043.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00008.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00008.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00035.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00035.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00043.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00043.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00030.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00030.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00069.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00069.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_triplebanana.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/triplebanana.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00056.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00056.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00063.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00063.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00050.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00050.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00076.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00076.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_redshell00001.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_redshell00001.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/layout_activity_gui_game.xml.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/layout/activity_gui_game.xml"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_roulement_00008.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_roulement_00008.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00002.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00002.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_banana.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/banana.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00015.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00015.png"
+    },
+    {
+        "merged": "fr.enseeiht.superjumpingsumokart.app-merged_res-11:/drawable_anim_ink_00028.png.flat",
+        "source": "fr.enseeiht.superjumpingsumokart.app-main-13:/drawable/anim_ink_00028.png"
+    }
+]

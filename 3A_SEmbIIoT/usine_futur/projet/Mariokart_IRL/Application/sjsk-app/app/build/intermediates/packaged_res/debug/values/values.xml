@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="connected">#27ff01</color>
+    <color name="connectionEstablished">#6cd95f</color>
+    <color name="notConnected">#e0e0e0e0</color>
+    <color name="waitingForClient">#ffaa00</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="menu_btn_width">250dp</dimen>
+    <dimen name="video_height">480px</dimen>
+    <dimen name="video_width">640px</dimen>
+    <string name="ToggleMode">Mode</string>
+    <string name="add_marker_btn">Add a marker</string>
+    <string name="app_name">SuperJumpingSumoKart</string>
+    <string name="checkPointTxt">Number of checkpoint \n to check</string>
+    <string name="checkpoint">Checkpoints : </string>
+    <string name="chose_selected_btn">Chose the selected Circuit</string>
+    <string name="circuitNameText">Name of the Circuit</string>
+    <string name="confirm_btn">Confirm the circuit</string>
+    <string name="connect_bluetooth_btn">Connect to another player</string>
+    <string name="connect_wifi_btn">Connect to a Jumping Sumo</string>
+    <string name="create_circuit_btn">Create a new Circuit</string>
+    <string name="debug_mode_btn_off">Debug mode OFF</string>
+    <string name="debug_mode_btn_on">Debug mode ON</string>
+    <string name="default_lap_checkpoint">0/0</string>
+    <string name="default_lms">\?</string>
+    <string name="deleteCircuit">Delete selected circuit</string>
+    <string name="deleteMarker">Delete marker</string>
+    <string name="exit_btn">Exit</string>
+    <string name="headerCircuitLaps">Number of laps</string>
+    <string name="headerCircuitName">Name of the circuit</string>
+    <string name="home_screen_title">Super Jumping Sumo Kart</string>
+    <string name="hostBTButtonOff">Host a game</string>
+    <string name="hostBTButtonOn">Looking for another player…</string>
+    <string name="hostBTButtonOnAndPlayerConnected">Other player found</string>
+    <string name="idTextDefault">ID</string>
+    <string name="joinBTButtonOff">Join a game</string>
+    <string name="joinBTButtonOn">Joined a game</string>
+    <string name="join_bluetooth_btn">Join another player</string>
+    <string name="laps">Laps : </string>
+    <string name="lapsText">Number of laps</string>
+    <string name="lms">LMS :</string>
+    <string name="modifyCircuit">Modify selected circuit</string>
+    <string name="no_circuit_selected">No circuit is selected. You must select a circuit before starting a race.</string>
+    <string name="no_connection_available">No connection available.</string>
+    <string name="no_drone_connected">No drone is connected to the application. You need to connect a drone before starting a race.</string>
+    <string name="set_circuit_btn">Select Circuit</string>
+    <string name="start_race_btn">Start a race</string>
+    <string name="title_activity_gui_game">SuperJumpingSumoKart</string>
+    <string name="title_activity_gui_welcome">SuperJumpingSumoKart - Home</string>
+    <string name="title_activity_guicreate_circuit">GUICreateCircuit</string>
+    <string name="wifiConnectionBtnOff">Connect</string>
+    <string name="wifiConnectionBtnOn">Connected</string>
+    <string name="wifiConnectionDialogChoiceTitle">Choose a Jumping Sumo</string>
+    <string name="xDefault">X</string>
+    <string name="yDefault">Y</string>
+    <string name="zDefault">Z</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable>
+</resources>

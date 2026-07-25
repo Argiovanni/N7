@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="fr.enseeiht.superjumpingsumokart.arpack.GUIGame"
+    android:id="@+id/guiGameFrameLayout">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jsbg2"
+        android:layout_marginStart="5px">
+
+        <FrameLayout
+            android:layout_width="640px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mainLayout"
+            android:layout_height="480px"
+            android:elevation="12dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:elevation="0dp">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cameraSurfaceView"
+                android:clickable="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/animationLayout"
+            android:layout_width="640px"
+            android:layout_height="480px"
+            android:elevation="24dp">
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/turnRightBtn"
+            android:id="@+id/sendTrapBtn"
+            app:srcCompat="@drawable/null_object" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/sendTrapBtn"
+            android:layout_alignEnd="@+id/sendTrapBtn"
+            android:layout_alignBottom="@+id/sendTrapBtn"
+            android:layout_alignTop="@+id/sendTrapBtn"
+            android:id="@+id/sendTrapLayout"
+            android:focusableInTouchMode="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bottom_arrow"
+            android:layout_marginEnd="18dp"
+            android:id="@+id/moveBackwardBtn"
+            android:background="@drawable/bottom_arrow"
+            android:layout_below="@+id/moveForwardBtn"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/moveForwardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/turnRightBtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="236dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/top_arrow"
+            app:srcCompat="@drawable/top_arrow" />
+
+        <TextView
+            android:text="@string/default_lap_checkpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkpointTextView"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="@string/default_lap_checkpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lapsTextView"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="@string/checkpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/lapsTextView"
+            android:layout_alignBottom="@+id/lapsTextView"
+            android:layout_toEndOf="@+id/lapsTextView"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:text="@string/lms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/lapsTextView"
+            android:layout_alignBottom="@+id/lapsTextView"
+            android:layout_toEndOf="@+id/checkpointTextView"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:text="@string/default_lms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lmsTextView"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/right_arrow"
+            android:id="@+id/turnRightBtn"
+            android:background="@drawable/right_arrow"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@+id/turnLeftBtn"
+            android:layout_toEndOf="@+id/turnLeftBtn" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/left_arrow"
+            android:id="@+id/turnLeftBtn"
+            android:background="@drawable/left_arrow"
+            android:layout_below="@+id/animationLayout"
+            android:layout_marginStart="12dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/jump_arrow"
+            android:id="@+id/jumpBtn"
+            android:background="@drawable/jump_arrow"
+            android:layout_below="@+id/mainLayout"
+            android:layout_toStartOf="@+id/checkpointTextView"
+            android:layout_marginEnd="34dp" />
+
+        <TextView
+            android:text="@string/laps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:layout_marginTop="13dp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/mainLayout" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/sendTrapBtn"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/ToggleMode"
+            android:onClick="onImageButtonClick"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pngwing_com" />
+    </RelativeLayout>
+</FrameLayout>

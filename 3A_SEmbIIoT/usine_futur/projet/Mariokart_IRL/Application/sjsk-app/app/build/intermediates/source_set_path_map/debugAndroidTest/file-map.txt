@@ -1,0 +1,6 @@
+fr.enseeiht.superjumpingsumokart.test.app-rules-0.5-0 /Users/kjaffres/.gradle/caches/8.9/transforms/37c61708b645d49b6c6e705579e9daad/transformed/rules-0.5/res
+fr.enseeiht.superjumpingsumokart.test.app-androidTest-1 /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/build/generated/res/resValues/androidTest/debug
+fr.enseeiht.superjumpingsumokart.test.app-androidTest-2 /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/build/generated/res/rs/androidTest/debug
+fr.enseeiht.superjumpingsumokart.test.app-mergeDebugAndroidTestResources-3 /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+fr.enseeiht.superjumpingsumokart.test.app-mergeDebugAndroidTestResources-4 /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+fr.enseeiht.superjumpingsumokart.test.app-merged_res-5 /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/build/intermediates/merged_res/debugAndroidTest

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jsbg"
+    android:fitsSystemWindows="true"
+    tools:context="fr.enseeiht.superjumpingsumokart.application.GUIWelcome">
+
+    <RelativeLayout
+        android:id="@+id/content_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="fr.enseeiht.superjumpingsumokart.application.GUIWelcome"
+        tools:showIn="@layout/activity_gui_welcome">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/startRaceBtn"
+                android:layout_height="wrap_content"
+                android:width="@dimen/menu_btn_width"
+                android:text="@string/start_race_btn" />
+
+            <Button
+                android:id="@+id/setCircuitBtn"
+                android:layout_height="wrap_content"
+                android:width="@dimen/menu_btn_width"
+                android:text="@string/set_circuit_btn" />
+
+            <Button
+                android:id="@+id/connectBluetoothBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="@dimen/menu_btn_width"
+                android:text="@string/hostBTButtonOff"
+                android:textOff="@string/hostBTButtonOff"
+                android:textOn="@string/hostBTButtonOn" />
+
+            <Button
+                android:id="@+id/joinBluetoothBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="@dimen/menu_btn_width"
+                android:text="@string/joinBTButtonOff"
+                android:textOff="@string/joinBTButtonOff"
+                android:textOn="@string/joinBTButtonOn" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/exit_btn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/home_screen_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <ToggleButton
+            android:id="@+id/connectWifiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:width="@dimen/menu_btn_width"
+            android:text="@string/connect_wifi_btn"
+            android:textOff="@string/wifiConnectionBtnOff"
+            android:textOn="@string/wifiConnectionBtnOn" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/textView"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/ToggleMode"
+            android:onClick="onImageButtonClick"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pngwing_com" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

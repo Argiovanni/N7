@@ -1,0 +1,57 @@
+<resources>
+
+    <string name="app_name">SuperJumpingSumoKart</string>
+    <string name="title_activity_gui_game">SuperJumpingSumoKart</string>
+    <string name="title_activity_gui_welcome">SuperJumpingSumoKart - Home</string>
+
+    <string name="home_screen_title">Super Jumping Sumo Kart</string>
+
+    <string name="set_circuit_btn">Select Circuit</string>
+    <string name="start_race_btn">Start a race</string>
+    <string name="connect_wifi_btn">Connect to a Jumping Sumo</string>
+    <string name="connect_bluetooth_btn">Connect to another player</string>
+    <string name="join_bluetooth_btn">Join another player</string>
+    <string name="debug_mode_btn_on">Debug mode ON</string>
+    <string name="debug_mode_btn_off">Debug mode OFF</string>
+    <string name="exit_btn">Exit</string>
+    <string name="no_drone_connected">No drone is connected to the application. You need to connect a drone before starting a race.</string>
+    <string name="no_connection_available">No connection available.</string>
+    <string name="wifiConnectionDialogChoiceTitle">Choose a Jumping Sumo</string>
+    <string name="wifiConnectionBtnOff">Connect</string>
+    <string name="wifiConnectionBtnOn">Connected</string>
+    <string name="title_activity_guicreate_circuit">GUICreateCircuit</string>
+
+    <string name="create_circuit_btn">Create a new Circuit</string>
+    <string name="chose_selected_btn">Chose the selected Circuit</string>
+
+    <string name="add_marker_btn">Add a marker</string>
+    <string name="confirm_btn">Confirm the circuit</string>
+    <string name="circuitNameText">Name of the Circuit</string>
+    <string name="lapsText">Number of laps</string>
+    <string name="checkPointTxt">Number of checkpoint \n to check</string>
+    <string name="idTextDefault">ID</string>
+    <string name="xDefault">X</string>
+    <string name="yDefault">Y</string>
+    <string name="zDefault">Z</string>
+    <string name="hostBTButtonOn">Looking for another player…</string>
+    <string name="hostBTButtonOff">Host a game</string>
+    <string name="joinBTButtonOff">Join a game</string>
+    <string name="joinBTButtonOn">Joined a game</string>
+    <string name="hostBTButtonOnAndPlayerConnected">Other player found</string>
+
+    <string name="deleteMarker">Delete marker</string>
+
+    <string name="modifyCircuit">Modify selected circuit</string>
+    <string name="deleteCircuit">Delete selected circuit</string>
+
+    <string name="headerCircuitName">Name of the circuit</string>
+    <string name="headerCircuitLaps">Number of laps</string>
+
+    <string name="checkpoint">Checkpoints : </string>
+    <string name="laps">Laps : </string>
+    <string name="default_lap_checkpoint">0/0</string>
+    <string name="no_circuit_selected">No circuit is selected. You must select a circuit before starting a race.</string>
+    <string name="lms">LMS :</string>
+    <string name="default_lms">\?</string>
+    <string name="ToggleMode">Mode</string>
+</resources>

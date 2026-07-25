@@ -1,0 +1,258 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:2:1-56:12
+MERGED from [:aRBaseLib] /Users/kjaffres/.gradle/caches/8.9/transforms/5d63988a3c2f845e2db7b700f3f2a97f/transformed/aRBaseLib-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:libARCommands] /Users/kjaffres/.gradle/caches/8.9/transforms/39916d508b1b017e28f317cee8646154/transformed/libARCommands-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARController] /Users/kjaffres/.gradle/caches/8.9/transforms/3d1a83c7077d481d7ff3b4f423ece6eb/transformed/libARController-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARDataTransfer] /Users/kjaffres/.gradle/caches/8.9/transforms/b83ce2a30a1a112eb8b869e1d86fba89/transformed/libARDataTransfer-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:2:1-14:12
+MERGED from [:libARMavlink] /Users/kjaffres/.gradle/caches/8.9/transforms/1961f7b9345708f148be57ba90e3ac7e/transformed/libARMavlink-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARSAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9d9480ebf9340ff2a20cbcebaa367a10/transformed/libARSAL-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARMedia] /Users/kjaffres/.gradle/caches/8.9/transforms/dfd5844d92713478f1c573577c9ef4da/transformed/libARMedia-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARNetwork] /Users/kjaffres/.gradle/caches/8.9/transforms/da54ba17cf2833944ea25afdb8842454/transformed/libARNetwork-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARNetworkAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9b39f4702f51386c790810a647800b25/transformed/libARNetworkAL-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARStream] /Users/kjaffres/.gradle/caches/8.9/transforms/339f3ce81160b1cc8485f1ad6e7c837d/transformed/libARStream-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARStream2] /Users/kjaffres/.gradle/caches/8.9/transforms/118c5231a43c252982dcd3d3777fb8f8/transformed/libARStream2-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARUpdater] /Users/kjaffres/.gradle/caches/8.9/transforms/6a5f6bbdf235288e1e85211f5cfc64d0/transformed/libARUpdater-release/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARUtils] /Users/kjaffres/.gradle/caches/8.9/transforms/6060e98305c8bad0e2d93f9258130aa7/transformed/libARUtils-release/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5f895144b7654f6b178057fd0f2d3405/transformed/appcompat-v7-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:transition:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/1693ac81df65efe0901f4937001774a9/transformed/transition-25.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/30fce28f7bcdb69784678dd204d8f082/transformed/support-v4-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kjaffres/.gradle/caches/8.9/transforms/fde1e14669f8a9d328407e6717d5d68c/transformed/constraint-layout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/e57328d31e213bd436e0bb29c3a77fdc/transformed/animated-vector-drawable-25.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c33388fce209b86edb1ad43b8d4c7a03/transformed/support-vector-drawable-25.1.1/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/069f72e710ef7230e2d7e5c8431598ce/transformed/recyclerview-v7-25.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c3b4e43e4d23a55ba6faabc7a416fb1a/transformed/support-fragment-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/d15971d4498265a82d324bb612e23bc6/transformed/support-media-compat-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/323ce2046f9bc13cb81d3d3b60500fd9/transformed/support-core-utils-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5050d918c478b7e83288651244d24b14/transformed/support-core-ui-25.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/4ff42c0e3227abf4e6747d9ae06df7e8/transformed/support-compat-25.1.1/AndroidManifest.xml:17:1-27:12
+	package
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:4:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:5:5-76
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:11:5-76
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:5:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:7:5-74
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:9:5-74
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:9:5-74
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:7:22-71
+uses-permission#android.permission.CAMERA
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:8:22-62
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:12:22-63
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:15:9-53
+application
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:18:5-54:19
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:18:5-54:19
+MERGED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5f895144b7654f6b178057fd0f2d3405/transformed/appcompat-v7-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5f895144b7654f6b178057fd0f2d3405/transformed/appcompat-v7-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/1693ac81df65efe0901f4937001774a9/transformed/transition-25.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/1693ac81df65efe0901f4937001774a9/transformed/transition-25.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/30fce28f7bcdb69784678dd204d8f082/transformed/support-v4-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/30fce28f7bcdb69784678dd204d8f082/transformed/support-v4-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kjaffres/.gradle/caches/8.9/transforms/fde1e14669f8a9d328407e6717d5d68c/transformed/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kjaffres/.gradle/caches/8.9/transforms/fde1e14669f8a9d328407e6717d5d68c/transformed/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/e57328d31e213bd436e0bb29c3a77fdc/transformed/animated-vector-drawable-25.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/e57328d31e213bd436e0bb29c3a77fdc/transformed/animated-vector-drawable-25.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c33388fce209b86edb1ad43b8d4c7a03/transformed/support-vector-drawable-25.1.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c33388fce209b86edb1ad43b8d4c7a03/transformed/support-vector-drawable-25.1.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c3b4e43e4d23a55ba6faabc7a416fb1a/transformed/support-fragment-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c3b4e43e4d23a55ba6faabc7a416fb1a/transformed/support-fragment-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/d15971d4498265a82d324bb612e23bc6/transformed/support-media-compat-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/d15971d4498265a82d324bb612e23bc6/transformed/support-media-compat-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/323ce2046f9bc13cb81d3d3b60500fd9/transformed/support-core-utils-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/323ce2046f9bc13cb81d3d3b60500fd9/transformed/support-core-utils-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5050d918c478b7e83288651244d24b14/transformed/support-core-ui-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5050d918c478b7e83288651244d24b14/transformed/support-core-ui-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/4ff42c0e3227abf4e6747d9ae06df7e8/transformed/support-compat-25.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/4ff42c0e3227abf4e6747d9ae06df7e8/transformed/support-compat-25.1.1/AndroidManifest.xml:25:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:23:9-35
+	android:label
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:22:9-41
+	android:largeHeap
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:24:9-33
+	android:icon
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:21:9-43
+	android:allowBackup
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:19:9-44
+activity#fr.enseeiht.superjumpingsumokart.application.GUIWelcome
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:26:9-39:20
+	android:screenOrientation
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:30:13-50
+	android:label
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:29:13-60
+	android:launchMode
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:32:13-48
+	android:hardwareAccelerated
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:28:13-47
+	android:theme
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:27:13-51
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:37:27-74
+activity#fr.enseeiht.superjumpingsumokart.arpack.GUIGame
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:40:9-50:20
+	android:screenOrientation
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:45:13-50
+	android:parentActivityName
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:44:13-65
+	android:label
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:43:13-63
+	android:configChanges
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:42:13-74
+	android:theme
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:46:13-51
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:41:13-43
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:47:13-49:91
+	android:value
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:49:17-88
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:48:17-63
+activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUICircuit
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:51:9-68
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:51:19-65
+activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUICreateCircuit
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:52:9-74
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:52:19-71
+activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUIModifyCircuit
+ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:53:9-83
+	android:name
+		ADDED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml:53:19-71
+uses-sdk
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+MERGED from [:aRBaseLib] /Users/kjaffres/.gradle/caches/8.9/transforms/5d63988a3c2f845e2db7b700f3f2a97f/transformed/aRBaseLib-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:aRBaseLib] /Users/kjaffres/.gradle/caches/8.9/transforms/5d63988a3c2f845e2db7b700f3f2a97f/transformed/aRBaseLib-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:libARCommands] /Users/kjaffres/.gradle/caches/8.9/transforms/39916d508b1b017e28f317cee8646154/transformed/libARCommands-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARCommands] /Users/kjaffres/.gradle/caches/8.9/transforms/39916d508b1b017e28f317cee8646154/transformed/libARCommands-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARController] /Users/kjaffres/.gradle/caches/8.9/transforms/3d1a83c7077d481d7ff3b4f423ece6eb/transformed/libARController-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARController] /Users/kjaffres/.gradle/caches/8.9/transforms/3d1a83c7077d481d7ff3b4f423ece6eb/transformed/libARController-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARDataTransfer] /Users/kjaffres/.gradle/caches/8.9/transforms/b83ce2a30a1a112eb8b869e1d86fba89/transformed/libARDataTransfer-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARDataTransfer] /Users/kjaffres/.gradle/caches/8.9/transforms/b83ce2a30a1a112eb8b869e1d86fba89/transformed/libARDataTransfer-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARMavlink] /Users/kjaffres/.gradle/caches/8.9/transforms/1961f7b9345708f148be57ba90e3ac7e/transformed/libARMavlink-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARMavlink] /Users/kjaffres/.gradle/caches/8.9/transforms/1961f7b9345708f148be57ba90e3ac7e/transformed/libARMavlink-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARSAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9d9480ebf9340ff2a20cbcebaa367a10/transformed/libARSAL-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARSAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9d9480ebf9340ff2a20cbcebaa367a10/transformed/libARSAL-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARMedia] /Users/kjaffres/.gradle/caches/8.9/transforms/dfd5844d92713478f1c573577c9ef4da/transformed/libARMedia-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARMedia] /Users/kjaffres/.gradle/caches/8.9/transforms/dfd5844d92713478f1c573577c9ef4da/transformed/libARMedia-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetwork] /Users/kjaffres/.gradle/caches/8.9/transforms/da54ba17cf2833944ea25afdb8842454/transformed/libARNetwork-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetwork] /Users/kjaffres/.gradle/caches/8.9/transforms/da54ba17cf2833944ea25afdb8842454/transformed/libARNetwork-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetworkAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9b39f4702f51386c790810a647800b25/transformed/libARNetworkAL-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetworkAL] /Users/kjaffres/.gradle/caches/8.9/transforms/9b39f4702f51386c790810a647800b25/transformed/libARNetworkAL-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream] /Users/kjaffres/.gradle/caches/8.9/transforms/339f3ce81160b1cc8485f1ad6e7c837d/transformed/libARStream-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream] /Users/kjaffres/.gradle/caches/8.9/transforms/339f3ce81160b1cc8485f1ad6e7c837d/transformed/libARStream-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream2] /Users/kjaffres/.gradle/caches/8.9/transforms/118c5231a43c252982dcd3d3777fb8f8/transformed/libARStream2-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream2] /Users/kjaffres/.gradle/caches/8.9/transforms/118c5231a43c252982dcd3d3777fb8f8/transformed/libARStream2-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARUpdater] /Users/kjaffres/.gradle/caches/8.9/transforms/6a5f6bbdf235288e1e85211f5cfc64d0/transformed/libARUpdater-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARUpdater] /Users/kjaffres/.gradle/caches/8.9/transforms/6a5f6bbdf235288e1e85211f5cfc64d0/transformed/libARUpdater-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARUtils] /Users/kjaffres/.gradle/caches/8.9/transforms/6060e98305c8bad0e2d93f9258130aa7/transformed/libARUtils-release/AndroidManifest.xml:7:5-44
+MERGED from [:libARUtils] /Users/kjaffres/.gradle/caches/8.9/transforms/6060e98305c8bad0e2d93f9258130aa7/transformed/libARUtils-release/AndroidManifest.xml:7:5-44
+MERGED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5f895144b7654f6b178057fd0f2d3405/transformed/appcompat-v7-25.1.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5f895144b7654f6b178057fd0f2d3405/transformed/appcompat-v7-25.1.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/1693ac81df65efe0901f4937001774a9/transformed/transition-25.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/1693ac81df65efe0901f4937001774a9/transformed/transition-25.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/30fce28f7bcdb69784678dd204d8f082/transformed/support-v4-25.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/30fce28f7bcdb69784678dd204d8f082/transformed/support-v4-25.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kjaffres/.gradle/caches/8.9/transforms/fde1e14669f8a9d328407e6717d5d68c/transformed/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kjaffres/.gradle/caches/8.9/transforms/fde1e14669f8a9d328407e6717d5d68c/transformed/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/e57328d31e213bd436e0bb29c3a77fdc/transformed/animated-vector-drawable-25.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/e57328d31e213bd436e0bb29c3a77fdc/transformed/animated-vector-drawable-25.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c33388fce209b86edb1ad43b8d4c7a03/transformed/support-vector-drawable-25.1.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c33388fce209b86edb1ad43b8d4c7a03/transformed/support-vector-drawable-25.1.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/069f72e710ef7230e2d7e5c8431598ce/transformed/recyclerview-v7-25.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/069f72e710ef7230e2d7e5c8431598ce/transformed/recyclerview-v7-25.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c3b4e43e4d23a55ba6faabc7a416fb1a/transformed/support-fragment-25.1.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/c3b4e43e4d23a55ba6faabc7a416fb1a/transformed/support-fragment-25.1.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/d15971d4498265a82d324bb612e23bc6/transformed/support-media-compat-25.1.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/d15971d4498265a82d324bb612e23bc6/transformed/support-media-compat-25.1.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/323ce2046f9bc13cb81d3d3b60500fd9/transformed/support-core-utils-25.1.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/323ce2046f9bc13cb81d3d3b60500fd9/transformed/support-core-utils-25.1.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5050d918c478b7e83288651244d24b14/transformed/support-core-ui-25.1.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/5050d918c478b7e83288651244d24b14/transformed/support-core-ui-25.1.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/4ff42c0e3227abf4e6747d9ae06df7e8/transformed/support-compat-25.1.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/4ff42c0e3227abf4e6747d9ae06df7e8/transformed/support-compat-25.1.1/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.1.1] /Users/kjaffres/.gradle/caches/8.9/transforms/19a93fa8973cd3386b581506459c36ac/transformed/design-25.1.1/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kjaffres/Documents/MarioKart/mariokart-24/sjsk-app/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:10:5-86
+	android:name
+		ADDED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:10:22-83
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:12:5-72
+	android:name
+		ADDED from [:libARDiscovery] /Users/kjaffres/.gradle/caches/8.9/transforms/5f024998b58cf90d76726f7be1103b38/transformed/libARDiscovery-release/AndroidManifest.xml:12:22-69

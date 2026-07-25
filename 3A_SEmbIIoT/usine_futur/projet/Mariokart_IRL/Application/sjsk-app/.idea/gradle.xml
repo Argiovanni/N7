@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARCommands" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARController" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDataTransfer" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARMavlink" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARMedia" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARNetwork" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARNetworkAL" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARSAL" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream2" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARUpdater" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libARUtils" />
+            <option value="$PROJECT_DIR$/../arsdk-kjr-NDK19-MIN_SDK_19/packages/libmux/android" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aRBaseLib" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

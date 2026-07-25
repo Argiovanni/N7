@@ -1,0 +1,2 @@
+fr.enseeiht.superjumpingsumokart.test
+string app_name

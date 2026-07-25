@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+        applicationId "fr.enseeiht.superjumpingsumokart"
+        minSdk rootProject.ext.minSdkVersion
+        //noinspection ExpiredTargetSdkVersion
+        compileSdkVersion rootProject.ext.compileSdkVersion
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        buildToolsVersion "34.0.0"
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        debug {
+            proguardFile 'proguard-rules.pro'
+        }
+        release {
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+    namespace 'fr.enseeiht.superjumpingsumokart'
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation project(':libARCommands')
+    implementation project(':libARController')
+    implementation project(':arsdk')
+    implementation project(':aRBaseLib')
+    implementation project(':libARMavlink')
+    implementation project(':libARDataTransfer')
+    implementation project(':libARDiscovery')
+    implementation project(':libARMedia')
+    implementation project(':libmux')
+    implementation project(':libARNetwork')
+    implementation project(':libARNetworkAL')
+    implementation project(':libARSAL')
+    implementation project(':libARStream')
+    implementation project(':libARStream2')
+    implementation project(':libARUpdater')
+    implementation project(':libARUtils')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+}
