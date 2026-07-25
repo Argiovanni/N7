@@ -21,4 +21,4 @@ Quelques recommandations importantes :
 
 En résumé, utilisez ce dépôt pour apprendre, pas simplement pour terminer un exercice. Si ces ressources vous permettent de mieux comprendre les concepts, de progresser et de gagner en autonomie, alors elles auront rempli leur objectif.
 
-*PS : les notes des différents projets sont là pour vous servir à évaluer la qualité de la "correction" proposée.*
+*PS : les notes des différents projets sont là pour vous aider à évaluer la "qualité" de la correction proposée.*
