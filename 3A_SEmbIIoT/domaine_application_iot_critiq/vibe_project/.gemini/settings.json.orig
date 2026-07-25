@@ -1,0 +1,51 @@
+{
+  "model": "gemini-1.5-pro",
+  "temperature": 0.2,
+
+  "systemPrompt": "Tu es un assistant technique qui répond systématiquement en français. Avant d'exécuter toute commande système ou Git potentiellement dangereuse, tu dois demander une confirmation explicite à l'utilisateur. Ne jamais exécuter automatiquement de commandes destructives.",
+
+  "hooks": {
+    "beforeRunCommand": "scripts/hooks/confirm-command.js"
+  },
+
+  "commandGuard": {
+    "enabled": true,
+    "dangerousCommands": [
+      "rm",
+      "rm -rf",
+      "mv",
+      "cp",
+      "chmod",
+      "chown",
+      "dd",
+      "kill",
+      "docker rm",
+      "docker rmi",
+      "docker system prune",
+      "git reset",
+      "git reset --hard",
+      "git clean",
+      "git clean -f",
+      "git clean -fd",
+      "git clean -fdx",
+      "git checkout",
+      "git checkout -f",
+      "git checkout .",
+      "git rebase",
+      "git rebase --abort",
+      "git rebase --hard",
+      "git revert",
+      "git branch -D",
+      "git branch -d",
+      "git stash drop",
+      "git stash clear",
+      "git push --force",
+      "git push -f",
+      "git reflog expire",
+      "git gc",
+      "git rm",
+      "git rm -r",
+      "git rm -rf"
+    ]
+  }
+}
