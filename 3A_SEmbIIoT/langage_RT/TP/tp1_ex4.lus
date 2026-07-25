@@ -1,0 +1,9 @@
+node STABLE(set:bool; delay:int) returns (level:bool);
+var counter:int;
+let
+    counter = delay -> if set then 0
+                else pre(counter)+1;
+
+    level = counter < delay;
+tel;
+

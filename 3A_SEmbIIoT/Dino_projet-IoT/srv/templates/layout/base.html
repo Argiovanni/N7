@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.I.N.O. | {% block title %}{% endblock %}</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+  <!-- JS FILES -->
+  <script src="{{ url_for('static', filename='assets/js/dino.js') }}" defer></script>
+
+  {% block stylesheets %}{% endblock stylesheets %}
+</head>
+
+<body>
+
+  <!-- ========================= -->
+  <!-- TOP NAVBAR (FIXED) -->
+  <!-- ========================= -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="{{ url_for('main.index') }}" class="navbar-brand">
+        D.I.N.O.
+      </a>
+    </div>
+
+    <div class="navbar-right">
+      {% if current_user.is_authenticated %}
+  <a href="{{ url_for('main.logout') }}" class="btn btn-logout">
+    Logout
+  </a>
+{% endif %}
+    </div>
+  </nav>
+
+  <!-- ========================= -->
+  <!-- PAGE CONTENT -->
+  <!-- ========================= -->
+  <main class="content">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block javascripts %}{% endblock javascripts %}
+</body>
+</html>

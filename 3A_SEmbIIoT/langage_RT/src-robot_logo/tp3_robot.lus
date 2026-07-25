@@ -1,0 +1,127 @@
+--------------------------------------------------------------------------------
+-- TP3 Robot Lego Mindstorms EV3
+-- Vos prénoms et noms
+-- ENSEEIHT – 2022-2023
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- Constant values
+--------------------------------------------------------------------------------
+-- si vous avez besoin de déclarer des constantes, mettez les ci-dessous ...
+-- exemple: 
+-- const DARK int;
+
+
+--------------------------------------------------------------------------------
+-- Main node
+--------------------------------------------------------------------------------
+-- Inputs:
+--   sensors 1 to 4 (from ports IN1 to IN4)
+--   speed of motors A to B (from ports OUTA to OUTD)
+-- Assumption:
+--   sensor_1 = right touch sensor
+--   sensor_4 = left touch sensor
+--   motor_speed_sensor_a = speed of motor A (right wheel)
+--   motor_speed_sensor_b = speed of motor B (left wheel)
+--------------------------------------------------------------------------------
+node main_robot (
+		sensor_1 : bool ;
+		sensor_2 : int ;
+		sensor_3 : int ;
+		sensor_4 : bool ;
+		motor_speed_sensor_a : int ;
+		motor_speed_sensor_b : int ;
+		motor_speed_sensor_c : int ;
+		motor_speed_sensor_d : int ;
+		)
+--------------------------------------------------------------------------------
+-- Outputs:
+--   Required rotation direction for each motor (clockwise versus counterclockwise)
+--   Required command mode for each motor (speed versus position)
+--   Required value of the command for each motor
+-- Assumption
+--   Motor_A = right wheel
+--   Motor_B = left wheel
+--------------------------------------------------------------------------------
+returns (
+	Clockwise_A : bool; Counterclockwise_A : bool; Cmd_Position_A : bool ; Cmd_Speed_A : bool; Value_A : int; 
+	Clockwise_B : bool; Counterclockwise_C : bool; Cmd_Position_B : bool ; Cmd_Speed_B : bool; Value_B : int; 
+	Clockwise_C : bool; Counterclockwise_B : bool; Cmd_Position_C : bool ; Cmd_Speed_C : bool; Value_C : int; 
+	Clockwise_D : bool; Counterclockwise_D : bool; Cmd_Position_D : bool ; Cmd_Speed_D : bool; Value_D : int; 
+	);
+--------------------------------------------------------------------------------
+var
+	type State = enum {FORTH, BACK, LEFT, RIGHT, STOP};
+	type Signal = enum {obs_left, obs_right};
+	etat, previous : State;
+	obstacle : Signal;
+	Forth, Back, Left, Right, Stop, TimeOut, Obstacle: bool;
+
+let
+	Clockwise_C = false; Counterclockwise_C = false; Cmd_Position_C = false;
+    Cmd_Speed_C = false; Value_C = 0;
+	Clockwise_D = false; Counterclockwise_D = false; Cmd_Position_D = false;
+    Cmd_Speed_D = false; Value_D = 0;
+	previous = FORTH -> pre(etat); -- à mieux définir
+
+	etat = FORTH -> if ((signal==obs_left) or (signal ==obs_right) or TimeOut) then STOP
+					else if (previous == STOP) and ((signal==obs_left) or (signal ==obs_right)) then BACK
+					else if (previous == BACK) and TimeOut then STOP 
+					else if (previous == STOP) and Obstacle and signal==obs_left then RIGHT
+					else if (previous == STOP) and Obstacle and signal==obs_right then LEFT
+					else if ((previous == RIGHT) or (previous == LEFT)) and TimeOut then STOP
+					else FORTH
+	--TODO: faire marcher la machine à état et définir les transitions
+
+	Forth = (not Stop) and (not Back) and (not Left) and (not Right);
+	Back = false -> sensor_1 or sensor_4;
+	Left = false -> sensor_1;
+	Right = false -> sensor_4;
+	Stop = false -> not Forth;
+	TimeOut = false -> if Back then STABLE(true, 3) 
+				else if Right or Left then STABLE(true, 4)
+				else STABLE(false, 10);
+
+
+	Clockwise_A = Forth or Left;
+	Counterclockwise_A = Back or Right;
+    Value_A = 100;
+	Cmd_Position_A = false; Cmd_Speed_A = true; 
+
+	Clockwise_B = Forth or Right;
+	Counterclockwise_B = Back or Left;
+    Value_B = 100;
+	Cmd_Position_B = false; Cmd_Speed_B = true; 
+tel;
+--------------------------------------------------------------------------------
+	
+
+
+--------------------------------------------------------------------------------
+-- si vous avez besoin d'utiliser d'autres noeuds, mettez les ci-après ...
+
+node STABLE(set:bool; delay:int) returns (level:bool);
+var counter:int;
+let
+    counter = delay -> if set then 0
+                else pre(counter)+1;
+
+    level = counter < delay;
+tel;
+
+
+node RS_switch2(set,reset,init:bool) returns (level : bool);
+let
+    level=init -> if (set and reset) then not pre(level)
+                        else if set then true
+                        else if reset then false
+                        else pre(level);
+tel;
+
+node one_button_switch(button:bool) returns (level:bool);
+let
+   level = fRS_switch2(button,button,button);
+tel;
+
+

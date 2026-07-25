@@ -1,0 +1,17 @@
+[Unit]
+Description=DINO
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/start_dino.sh
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

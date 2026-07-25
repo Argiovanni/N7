@@ -1,0 +1,113 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Tableau de Bord{% endblock %}
+
+{% block stylesheets %}
+<style>
+    /* Design spécifique au dashboard */
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        background: #1e2229; /* Couleur sombre pour le contraste */
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        border: 1px solid #333;
+    }
+
+    .value {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #00d4ff; /* Ton accent D.I.N.O. */
+        margin: 5px 0;
+    }
+
+    .unit {
+        color: #888;
+        font-size: 1.1rem;
+    }
+
+    .label {
+        color: #aaa;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+
+    .status-indicator {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="card">
+        <div class="label">Régime Moteur</div>
+        <div class="value" id="rpm">0</div>
+        <div class="unit">RPM</div>
+    </div>
+
+    <div class="card">
+        <div class="label">Vitesse</div>
+        <div class="value" id="speed">0</div>
+        <div class="unit">km/h</div>
+    </div>
+
+    <div class="card">
+        <div class="label">Temp. Liquide Refroidissement</div>
+        <div class="value" id="temp">--</div>
+        <div class="unit">°C</div>
+    </div>
+
+</div>
+
+<div class="status-indicator">
+    Statut Bus CAN: <span id="can-status" style="color: orange;">Initialisation...</span>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+<script src="{{ url_for('static', filename='assets/js/socket.io.min.js') }}"></script>
+
+<script>
+    const socket = io();
+
+    // Références DOM
+    const elements = {
+        rpm: document.getElementById('rpm'),
+        speed: document.getElementById('speed'),
+        temp: document.getElementById('temp'),
+        status: document.getElementById('can-status')
+    };
+
+    socket.on('connect', () => {
+        elements.status.innerText = "Connecté au serveur";
+        elements.status.style.color = "#00ff88";
+    });
+
+    socket.on('disconnect', () => {
+        elements.status.innerText = "Déconnecté";
+        elements.status.style.color = "#ff4d4d";
+    });
+
+    // Écoute des mises à jour du bus CAN envoyées par utils.py
+    socket.on('can_update', (data) => {
+        if (data.type === 'RPM') {
+            elements.rpm.innerText = data.value;
+        } else if (data.type === 'Vitesse') {
+            elements.speed.innerText = data.value;
+        } else if (data.type === 'Temp') {
+            elements.temp.innerText = data.value;
+        }
+    });
+</script>
+{% endblock javascripts %}

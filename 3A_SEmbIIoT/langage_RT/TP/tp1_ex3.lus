@@ -1,0 +1,13 @@
+node RS_switch2(set,reset,init:bool) returns (level : bool);
+let
+    level=init -> if (set and reset) then not pre(level)
+                        else if set then true
+                        else if reset then false
+                        else pre(level);
+tel;
+
+node one_button_switch(button:bool) returns (level:bool);
+let
+   level = fRS_switch2(button,button,button);
+tel;
+

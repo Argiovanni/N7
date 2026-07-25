@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding-top: 50px; /* Add some space from the top */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.user-button, .new-user-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    display: flex; /* For aligning icon and text in new user button */
+    align-items: center;
+    justify-content: center;
+}
+
+.user-button:hover, .new-user-button:hover {
+    background-color: #e0e0e0;
+}
+
+.user-button-container {
+    display: flex; /* To put the user buttons side-by-side */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+.plus-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.profiles {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  width: 140px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background: #333;
+  border-radius: 10px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card:hover .profile-avatar {
+  background: #4caf50;
+}
+
+.add-user .profile-avatar {
+  background: #555;
+}

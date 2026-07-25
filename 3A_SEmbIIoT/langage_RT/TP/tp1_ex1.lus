@@ -1,0 +1,11 @@
+node sim_counter(RAZ : bool) returns (Top : bool);
+let
+   Top = Counter(4,RAZ);
+tel;
+
+node Counter(N : int; RAZ : bool) returns (Top : bool);
+var c : int;
+let
+   c = 0 -> (if RAZ then 0 else pre(c) + 1);
+   Top=(c=N);
+tel;

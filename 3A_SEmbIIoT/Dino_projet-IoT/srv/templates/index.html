@@ -1,0 +1,29 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Select User{% endblock %}
+
+{% block content %}
+<h2>Select a driver</h2>
+
+<div class="profiles">
+
+  {% for user in users %}
+    <a href="{{ url_for('main.login_user_profile', user_id=user.id) }}"
+       class="profile-card">
+      <div class="profile-avatar">
+        {{ user.username[0]|upper }}
+      </div>
+      <div class="profile-name">
+        {{ user.username }}
+      </div>
+    </a>
+  {% endfor %}
+
+  <!-- ADD USER -->
+  <a href="{{ url_for('main.create_user') }}" class="profile-card add-user">
+    <div class="profile-avatar">+</div>
+    <div class="profile-name">Add user</div>
+  </a>
+
+</div>
+{% endblock %}
