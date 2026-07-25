@@ -1,0 +1,15 @@
+S5 : 
+PIM (pr1, 2 et 3): 17.75/20, 16.75/20, 17.5/20
+Modelisation : 18.75/20
+Autom : 16.5/20
+C : 18.25/20
+
+S6 :
+internet : 15.5/20
+TOB (mini pr, pr court, pr long) : 17.5/20, 19/20, 12.7/20
+SEC : 18/20
+C : 16.5/20
+Telecom/TNS : 13/20
+Calcul Scientifique : 13/20
+
+
