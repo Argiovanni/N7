@@ -1,3 +1,3 @@
 # N7
-Mes cours et tps pendant ma scolarité à l'n7
-(need add fiche pour exam et tp from ordi n7 et git parrain)
+Mes TDs, TPs et Projets pendant ma scolarité à l'n7
+(need add tp from ordi n7 et lien vers git parrain)
